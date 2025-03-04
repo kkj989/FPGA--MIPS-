@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat May 13 11:24:02 2023
+# Process ID: 11396
+# Current directory: D:/vivado/project/project_6ALU/ALU/ALU.runs/impl_1
+# Command line: vivado.exe -log ALU.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source ALU.tcl -notrace
+# Log file: D:/vivado/project/project_6ALU/ALU/ALU.runs/impl_1/ALU.vdi
+# Journal file: D:/vivado/project/project_6ALU/ALU/ALU.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source ALU.tcl -notrace
