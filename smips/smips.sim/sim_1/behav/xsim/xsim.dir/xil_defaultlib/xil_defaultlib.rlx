@@ -1,0 +1,15 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+D:/Vivado2020_2/FPGA/ALU/ALU.srcs/sources_1/new/ALU.v,1685794182,verilog,,D:/Vivado2020_2/FPGA/CTRL/CTRL.srcs/sources_1/new/CTRL.v,,ALU,,,,,,,,
+D:/Vivado2020_2/FPGA/CTRL/CTRL.srcs/sources_1/new/CTRL.v,1686381081,verilog,,D:/Vivado2020_2/FPGA/DataMem/DataMem.srcs/sources_1/new/DataMem.v,,CTRL,,,,,,,,
+D:/Vivado2020_2/FPGA/DataMem/DataMem.srcs/sources_1/new/DataMem.v,1685344372,verilog,,D:/Vivado2020_2/FPGA/DataPath/DataPath.srcs/sources_1/new/DataPath.v,,DataMem,,,,,,,,
+D:/Vivado2020_2/FPGA/DataPath/DataPath.srcs/sources_1/new/DataPath.v,1686236491,verilog,,D:/Vivado2020_2/FPGA/GRF/GRF.srcs/sources_1/new/GRF.v,,DataPath,,,,,,,,
+D:/Vivado2020_2/FPGA/GRF/GRF.srcs/sources_1/new/GRF.v,1685754065,verilog,,D:/Vivado2020_2/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v,,GRF,,,,,,,,
+D:/Vivado2020_2/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v,1717863160,verilog,,D:/Vivado2020_2/FPGA/select21/select21.srcs/sources_1/new/select21.v,,IFU,,,,,,,,
+D:/Vivado2020_2/FPGA/select21/select21.srcs/sources_1/new/select21.v,1685753113,verilog,,D:/Vivado2020_2/FPGA/select31/select31.srcs/sources_1/new/select31.v,,select21,,,,,,,,
+D:/Vivado2020_2/FPGA/select31/select31.srcs/sources_1/new/select31.v,1685755326,verilog,,D:/Vivado2020_2/FPGA/smips/smips.srcs/sources_1/new/smips.v,,select31,,,,,,,,
+D:/Vivado2020_2/FPGA/smips/smips.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+D:/Vivado2020_2/FPGA/smips/smips.srcs/sim_1/new/smips_tb.v,1685346484,verilog,,,,smips_tb,,,,,,,,
+D:/Vivado2020_2/FPGA/smips/smips.srcs/sources_1/new/smips.v,1685715858,verilog,,D:/Vivado2020_2/FPGA/smips/smips.srcs/sim_1/new/smips_tb.v,,smips,,,,,,,,

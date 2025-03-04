@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri May  5 10:03:07 2023
+# Process ID: 16312
+# Current directory: C:/Users/pen/Desktop/FPGA/DataMem
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18920 C:\Users\pen\Desktop\FPGA\DataMem\DataMem.xpr
+# Log file: C:/Users/pen/Desktop/FPGA/DataMem/vivado.log
+# Journal file: C:/Users/pen/Desktop/FPGA/DataMem\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/pen/Desktop/FPGA/DataMem/DataMem.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1

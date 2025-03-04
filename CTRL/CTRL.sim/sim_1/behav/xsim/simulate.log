@@ -1,0 +1,36 @@
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+5	 opIn=xxxxxx:	 funcIn=xxxxxx	 zero=1:	 ifuCtrl=x	 regWrite=x	 regDst=x	 aluScrB=x	 branch=1	 memWrite=x	 memtoreg=x	 aluCtrl=x	
+10	 opIn=000000:	 funcIn=100001	 zero=1:	 ifuCtrl=x	 regWrite=x	 regDst=x	 aluScrB=x	 branch=1	 memWrite=x	 memtoreg=x	 aluCtrl=x	
+15	 opIn=000000:	 funcIn=100001	 zero=1:	 ifuCtrl=0	 regWrite=1	 regDst=1	 aluScrB=0	 branch=1	 memWrite=0	 memtoreg=0	 aluCtrl=1	
+20	 opIn=000000:	 funcIn=100011	 zero=1:	 ifuCtrl=0	 regWrite=1	 regDst=1	 aluScrB=0	 branch=1	 memWrite=0	 memtoreg=0	 aluCtrl=1	
+25	 opIn=000000:	 funcIn=100011	 zero=1:	 ifuCtrl=0	 regWrite=1	 regDst=1	 aluScrB=0	 branch=1	 memWrite=0	 memtoreg=0	 aluCtrl=2	
+30	 opIn=000000:	 funcIn=100100	 zero=1:	 ifuCtrl=0	 regWrite=1	 regDst=1	 aluScrB=0	 branch=1	 memWrite=0	 memtoreg=0	 aluCtrl=2	
+35	 opIn=000000:	 funcIn=100100	 zero=1:	 ifuCtrl=0	 regWrite=1	 regDst=1	 aluScrB=0	 branch=1	 memWrite=0	 memtoreg=0	 aluCtrl=3	
+40	 opIn=000000:	 funcIn=101011	 zero=1:	 ifuCtrl=0	 regWrite=1	 regDst=1	 aluScrB=0	 branch=1	 memWrite=0	 memtoreg=0	 aluCtrl=3	
+45	 opIn=000000:	 funcIn=101011	 zero=1:	 ifuCtrl=0	 regWrite=1	 regDst=1	 aluScrB=0	 branch=1	 memWrite=0	 memtoreg=0	 aluCtrl=b	
+50	 opIn=000000:	 funcIn=100000	 zero=1:	 ifuCtrl=0	 regWrite=1	 regDst=1	 aluScrB=0	 branch=1	 memWrite=0	 memtoreg=0	 aluCtrl=b	
+55	 opIn=000000:	 funcIn=100000	 zero=1:	 ifuCtrl=0	 regWrite=1	 regDst=1	 aluScrB=0	 branch=1	 memWrite=0	 memtoreg=0	 aluCtrl=1	
+60	 opIn=000000:	 funcIn=000000	 zero=1:	 ifuCtrl=0	 regWrite=1	 regDst=1	 aluScrB=0	 branch=1	 memWrite=0	 memtoreg=0	 aluCtrl=1	
+65	 opIn=000000:	 funcIn=000000	 zero=1:	 ifuCtrl=0	 regWrite=1	 regDst=1	 aluScrB=2	 branch=1	 memWrite=0	 memtoreg=0	 aluCtrl=8	
+70	 opIn=000000:	 funcIn=000010	 zero=1:	 ifuCtrl=0	 regWrite=1	 regDst=1	 aluScrB=2	 branch=1	 memWrite=0	 memtoreg=0	 aluCtrl=8	
+75	 opIn=000000:	 funcIn=000010	 zero=1:	 ifuCtrl=0	 regWrite=1	 regDst=1	 aluScrB=2	 branch=1	 memWrite=0	 memtoreg=0	 aluCtrl=9	
+80	 opIn=000000:	 funcIn=000011	 zero=1:	 ifuCtrl=0	 regWrite=1	 regDst=1	 aluScrB=2	 branch=1	 memWrite=0	 memtoreg=0	 aluCtrl=9	
+85	 opIn=000000:	 funcIn=000011	 zero=1:	 ifuCtrl=0	 regWrite=1	 regDst=1	 aluScrB=2	 branch=1	 memWrite=0	 memtoreg=0	 aluCtrl=a	
+90	 opIn=000000:	 funcIn=111111	 zero=1:	 ifuCtrl=0	 regWrite=1	 regDst=1	 aluScrB=2	 branch=1	 memWrite=0	 memtoreg=0	 aluCtrl=a	
+95	 opIn=000000:	 funcIn=111111	 zero=1:	 ifuCtrl=3	 regWrite=0	 regDst=1	 aluScrB=2	 branch=1	 memWrite=0	 memtoreg=0	 aluCtrl=0	
+100	 opIn=001101:	 funcIn=111111	 zero=1:	 ifuCtrl=3	 regWrite=0	 regDst=1	 aluScrB=2	 branch=1	 memWrite=0	 memtoreg=0	 aluCtrl=0	
+105	 opIn=001101:	 funcIn=111111	 zero=1:	 ifuCtrl=0	 regWrite=1	 regDst=0	 aluScrB=1	 branch=1	 memWrite=0	 memtoreg=0	 aluCtrl=4	
+110	 opIn=001111:	 funcIn=111111	 zero=1:	 ifuCtrl=0	 regWrite=1	 regDst=0	 aluScrB=1	 branch=1	 memWrite=0	 memtoreg=0	 aluCtrl=4	
+115	 opIn=001111:	 funcIn=111111	 zero=1:	 ifuCtrl=0	 regWrite=1	 regDst=0	 aluScrB=1	 branch=1	 memWrite=0	 memtoreg=2	 aluCtrl=4	
+120	 opIn=100011:	 funcIn=111111	 zero=1:	 ifuCtrl=0	 regWrite=1	 regDst=0	 aluScrB=1	 branch=1	 memWrite=0	 memtoreg=2	 aluCtrl=4	
+125	 opIn=100011:	 funcIn=111111	 zero=1:	 ifuCtrl=0	 regWrite=1	 regDst=0	 aluScrB=1	 branch=1	 memWrite=0	 memtoreg=1	 aluCtrl=6	
+130	 opIn=101011:	 funcIn=111111	 zero=1:	 ifuCtrl=0	 regWrite=1	 regDst=0	 aluScrB=1	 branch=1	 memWrite=0	 memtoreg=1	 aluCtrl=6	
+135	 opIn=101011:	 funcIn=111111	 zero=1:	 ifuCtrl=0	 regWrite=0	 regDst=0	 aluScrB=1	 branch=1	 memWrite=1	 memtoreg=1	 aluCtrl=6	
+140	 opIn=000100:	 funcIn=111111	 zero=1:	 ifuCtrl=0	 regWrite=0	 regDst=0	 aluScrB=1	 branch=1	 memWrite=1	 memtoreg=1	 aluCtrl=6	
+145	 opIn=000100:	 funcIn=111111	 zero=1:	 ifuCtrl=1	 regWrite=0	 regDst=0	 aluScrB=0	 branch=1	 memWrite=0	 memtoreg=1	 aluCtrl=7	
+150	 opIn=000010:	 funcIn=111111	 zero=1:	 ifuCtrl=1	 regWrite=0	 regDst=0	 aluScrB=0	 branch=1	 memWrite=0	 memtoreg=1	 aluCtrl=7	
+155	 opIn=000010:	 funcIn=111111	 zero=1:	 ifuCtrl=2	 regWrite=0	 regDst=0	 aluScrB=0	 branch=1	 memWrite=0	 memtoreg=1	 aluCtrl=7	
+160	 opIn=001001:	 funcIn=111111	 zero=1:	 ifuCtrl=2	 regWrite=0	 regDst=0	 aluScrB=0	 branch=1	 memWrite=0	 memtoreg=1	 aluCtrl=7	
+165	 opIn=001001:	 funcIn=111111	 zero=1:	 ifuCtrl=0	 regWrite=1	 regDst=1	 aluScrB=0	 branch=1	 memWrite=0	 memtoreg=0	 aluCtrl=6	
+$finish called at time : 170 ns : File "C:/Users/pen/Desktop/FPGA/CTRL/CTRL.srcs/sim_1/new/CTRL_tb.v" Line 58

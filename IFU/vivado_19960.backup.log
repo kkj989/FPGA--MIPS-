@@ -1,0 +1,1750 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri May 19 14:24:37 2023
+# Process ID: 19960
+# Current directory: C:/Users/pen/Desktop/FPGA/IFU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19396 C:\Users\pen\Desktop\FPGA\IFU\IFU.xpr
+# Log file: C:/Users/pen/Desktop/FPGA/IFU/vivado.log
+# Journal file: C:/Users/pen/Desktop/FPGA/IFU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/pen/Desktop/FPGA/IFU/IFU.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/PenProgram/Xilinx/vivado/Vivado/2019.2/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Fri May 19 14:25:15 2023] Launched synth_1...
+Run output will be captured here: C:/Users/pen/Desktop/FPGA/IFU/IFU.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Fri May 19 14:25:44 2023] Launched impl_1...
+Run output will be captured here: C:/Users/pen/Desktop/FPGA/IFU/IFU.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1010.641 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1089.309 ; gain = 0.219
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1089.309 ; gain = 0.219
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1089.309 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1239.855 ; gain = 477.340
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7k70tfbv676-1
+Top: IFU
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1959.145 ; gain = 215.953
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'IFU' [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:23]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "block" *) [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'code.txt'; please make sure the file is added to project and has read permission, ignoring [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:42]
+
+Warning: Trying to implement RAM in registers. Block RAM or DRAM implementation is not possible for one or more of the following reasons :
+	1: Unable to determine number of words or word size in RAM. 
+	2: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+WARNING: [Synth 8-3848] Net imem in module/entity IFU does not have driver. [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:31]
+INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'IFU' (1#1) [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2018.746 ; gain = 275.555
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2036.625 ; gain = 293.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2036.625 ; gain = 293.434
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 2036.625 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2093.078 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2131.070 ; gain = 387.879
+7 Infos, 100 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 2131.070 ; gain = 387.879
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Fri May 19 14:31:41 2023] Launched synth_1...
+Run output will be captured here: C:/Users/pen/Desktop/FPGA/IFU/IFU.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Fri May 19 14:32:04 2023] Launched impl_1...
+Run output will be captured here: C:/Users/pen/Desktop/FPGA/IFU/IFU.runs/impl_1/runme.log
+current_design impl_1
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2171.348 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 2171.348 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 2171.348 ; gain = 0.000
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+current_design rtl_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/pen/Desktop/FPGA/IFU/IFU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'IFU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/pen/Desktop/FPGA/IFU/IFU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj IFU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sim_1/new/IFU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFU
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'IFU' [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:23]
+INFO: [VRFC 10-311] analyzing module IFU_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/pen/Desktop/FPGA/IFU/IFU.sim/sim_1/behav/xsim'
+"xelab -wto c2908ae65526437484f3a67d1b91fa7d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot IFU_tb_behav xil_defaultlib.IFU_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/PenProgram/Xilinx/vivado/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto c2908ae65526437484f3a67d1b91fa7d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot IFU_tb_behav xil_defaultlib.IFU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.IFU
+Compiling module xil_defaultlib.IFU_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot IFU_tb_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/pen/Desktop/FPGA/IFU/IFU.sim/sim_1/behav/xsim/xsim.dir/IFU_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/pen/Desktop/FPGA/IFU/IFU.sim/sim_1/behav/xsim/xsim.dir/IFU_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri May 19 14:33:50 2023. For additional details about this file, please refer to the WebTalk help file at C:/PenProgram/Xilinx/vivado/Vivado/2019.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Fri May 19 14:33:50 2023...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 2422.188 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '13' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/pen/Desktop/FPGA/IFU/IFU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "IFU_tb_behav -key {Behavioral:sim_1:Functional:IFU_tb} -tclbatch {IFU_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source IFU_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+2 0 33ac021
+4 0 33ac021
+6 0 33ac021
+8 0 33ac021
+10 0 33ac021
+12 0 33ac021
+14 0 33ac021
+16 0 33ac021
+18 0 33ac021
+20 0 33ac021
+22 0 33ac021
+24 0 33ac021
+26 0 33ac021
+28 0 33ac021
+30 0 33ac021
+32 0 33ac021
+34 0 33ac021
+36 0 33ac021
+38 0 33ac021
+40 0 33ac021
+42 0 33ac021
+44 0 33ac021
+46 0 33ac021
+48 0 33ac021
+50 0 33ac021
+52 0 33ac021
+54 0 33ac021
+56 0 33ac021
+58 4 33ac023
+60 4 33ac023
+62 4 33ac023
+64 4 33ac023
+66 8 8
+68 8 8
+70 8 8
+72 8 8
+74 c 12
+76 c 12
+78 c 12
+80 c 12
+82 10 16
+84 10 16
+86 10 16
+88 10 16
+90 14 20
+92 14 20
+94 14 20
+96 14 20
+98 18 24
+100 18 24
+102 18 24
+104 18 24
+106 80 128
+108 80 128
+110 80 128
+112 80 128
+114 e8 232
+116 e8 232
+118 e8 232
+120 e8 232
+122 150 336
+124 150 336
+126 150 336
+128 150 336
+130 1b8 440
+132 1b8 440
+134 1b8 440
+136 1b8 440
+138 220 544
+140 220 544
+142 220 544
+144 220 544
+146 288 xxxxxxxx
+148 288 xxxxxxxx
+150 288 xxxxxxxx
+152 288 xxxxxxxx
+154 28 40
+156 28 40
+158 28 40
+160 28 40
+162 28 40
+164 28 40
+166 28 40
+168 28 40
+170 28 40
+172 28 40
+174 28 40
+176 28 40
+178 28 40
+180 28 40
+182 28 40
+184 28 40
+186 28 40
+188 28 40
+190 28 40
+192 28 40
+194 28 40
+196 28 40
+198 28 40
+200 28 40
+202 b 11
+204 b 11
+206 b 11
+208 b 11
+210 b 11
+212 b 11
+214 b 11
+216 b 11
+218 b 11
+220 b 11
+222 b 11
+224 b 11
+226 b 11
+228 b 11
+230 b 11
+232 b 11
+234 b 11
+236 b 11
+238 b 11
+240 b 11
+242 b 11
+244 b 11
+246 b 11
+248 b 11
+250 b 11
+252 b 11
+254 b 11
+256 b 11
+258 f 15
+260 f 15
+262 f 15
+264 f 15
+266 13 19
+268 13 19
+270 13 19
+272 13 19
+274 17 23
+276 17 23
+278 17 23
+280 17 23
+282 1b 27
+284 1b 27
+286 1b 27
+288 1b 27
+290 1f 31
+292 1f 31
+294 1f 31
+296 1f 31
+298 23 35
+300 23 35
+302 23 35
+304 23 35
+306 27 39
+308 27 39
+310 27 39
+312 27 39
+314 2b 43
+316 2b 43
+318 2b 43
+320 2b 43
+322 2f 47
+324 2f 47
+326 2f 47
+328 2f 47
+330 33 51
+332 33 51
+334 33 51
+336 33 51
+338 37 55
+340 37 55
+342 37 55
+344 37 55
+346 3b 59
+348 3b 59
+$finish called at time : 350 ns : File "C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sim_1/new/IFU_tb.v" Line 45
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'IFU_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 2422.188 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 3391.246 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/pen/Desktop/FPGA/IFU/IFU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'IFU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/pen/Desktop/FPGA/IFU/IFU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj IFU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sim_1/new/IFU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFU
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'IFU' [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:23]
+INFO: [VRFC 10-311] analyzing module IFU_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/pen/Desktop/FPGA/IFU/IFU.sim/sim_1/behav/xsim'
+"xelab -wto c2908ae65526437484f3a67d1b91fa7d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot IFU_tb_behav xil_defaultlib.IFU_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/PenProgram/Xilinx/vivado/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto c2908ae65526437484f3a67d1b91fa7d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot IFU_tb_behav xil_defaultlib.IFU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.IFU
+Compiling module xil_defaultlib.IFU_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot IFU_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/pen/Desktop/FPGA/IFU/IFU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "IFU_tb_behav -key {Behavioral:sim_1:Functional:IFU_tb} -tclbatch {IFU_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source IFU_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+2 0 33ac021
+4 0 33ac021
+6 0 33ac021
+8 0 33ac021
+10 0 33ac021
+12 0 33ac021
+14 0 33ac021
+16 0 33ac021
+18 0 33ac021
+20 0 33ac021
+22 0 33ac021
+24 0 33ac021
+26 0 33ac021
+28 0 33ac021
+30 0 33ac021
+32 0 33ac021
+34 0 33ac021
+36 0 33ac021
+38 0 33ac021
+40 0 33ac021
+42 0 33ac021
+44 0 33ac021
+46 0 33ac021
+48 0 33ac021
+50 0 33ac021
+52 0 33ac021
+54 0 33ac021
+56 0 33ac021
+58 4 33ac023
+60 4 33ac023
+62 4 33ac023
+64 4 33ac023
+66 8 8
+68 8 8
+70 8 8
+72 8 8
+74 c 12
+76 c 12
+78 c 12
+80 c 12
+82 10 16
+84 10 16
+86 10 16
+88 10 16
+90 14 20
+92 14 20
+94 14 20
+96 14 20
+98 18 24
+100 18 24
+102 18 24
+104 18 24
+106 80 128
+108 80 128
+110 80 128
+112 80 128
+114 e8 232
+116 e8 232
+118 e8 232
+120 e8 232
+122 150 336
+124 150 336
+126 150 336
+128 150 336
+130 1b8 440
+132 1b8 440
+134 1b8 440
+136 1b8 440
+138 220 544
+140 220 544
+142 220 544
+144 220 544
+146 288 xxxxxxxx
+148 288 xxxxxxxx
+150 288 xxxxxxxx
+152 288 xxxxxxxx
+154 28 40
+156 28 40
+158 28 40
+160 28 40
+162 28 40
+164 28 40
+166 28 40
+168 28 40
+170 28 40
+172 28 40
+174 28 40
+176 28 40
+178 28 40
+180 28 40
+182 28 40
+184 28 40
+186 28 40
+188 28 40
+190 28 40
+192 28 40
+194 28 40
+196 28 40
+198 28 40
+200 28 40
+202 b 11
+204 b 11
+206 b 11
+208 b 11
+210 b 11
+212 b 11
+214 b 11
+216 b 11
+218 b 11
+220 b 11
+222 b 11
+224 b 11
+226 b 11
+228 b 11
+230 b 11
+232 b 11
+234 b 11
+236 b 11
+238 b 11
+240 b 11
+242 b 11
+244 b 11
+246 b 11
+248 b 11
+250 b 11
+252 b 11
+254 b 11
+256 b 11
+258 f 15
+260 f 15
+262 f 15
+264 f 15
+266 13 19
+268 13 19
+270 13 19
+272 13 19
+274 17 23
+276 17 23
+278 17 23
+280 17 23
+282 1b 27
+284 1b 27
+286 1b 27
+288 1b 27
+290 1f 31
+292 1f 31
+294 1f 31
+296 1f 31
+298 23 35
+300 23 35
+302 23 35
+304 23 35
+306 27 39
+308 27 39
+310 27 39
+312 27 39
+314 2b 43
+316 2b 43
+318 2b 43
+320 2b 43
+322 2f 47
+324 2f 47
+326 2f 47
+328 2f 47
+330 33 51
+332 33 51
+334 33 51
+336 33 51
+338 37 55
+340 37 55
+342 37 55
+344 37 55
+346 3b 59
+348 3b 59
+$finish called at time : 350 ns : File "C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sim_1/new/IFU_tb.v" Line 45
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'IFU_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 3391.246 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/pen/Desktop/FPGA/IFU/IFU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'IFU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/pen/Desktop/FPGA/IFU/IFU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj IFU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sim_1/new/IFU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFU
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'IFU' [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:23]
+INFO: [VRFC 10-311] analyzing module IFU_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/pen/Desktop/FPGA/IFU/IFU.sim/sim_1/behav/xsim'
+"xelab -wto c2908ae65526437484f3a67d1b91fa7d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot IFU_tb_behav xil_defaultlib.IFU_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/PenProgram/Xilinx/vivado/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto c2908ae65526437484f3a67d1b91fa7d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot IFU_tb_behav xil_defaultlib.IFU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.IFU
+Compiling module xil_defaultlib.IFU_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot IFU_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/pen/Desktop/FPGA/IFU/IFU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "IFU_tb_behav -key {Behavioral:sim_1:Functional:IFU_tb} -tclbatch {IFU_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source IFU_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+2 0 33ac021
+4 0 33ac021
+6 0 33ac021
+8 0 33ac021
+10 0 33ac021
+12 0 33ac021
+14 0 33ac021
+16 0 33ac021
+18 0 33ac021
+20 0 33ac021
+22 0 33ac021
+24 0 33ac021
+26 0 33ac021
+28 0 33ac021
+30 0 33ac021
+32 0 33ac021
+34 0 33ac021
+36 0 33ac021
+38 0 33ac021
+40 0 33ac021
+42 0 33ac021
+44 0 33ac021
+46 0 33ac021
+48 0 33ac021
+50 0 33ac021
+52 0 33ac021
+54 0 33ac021
+56 0 33ac021
+58 4 33ac023
+60 4 33ac023
+62 4 33ac023
+64 4 33ac023
+66 8 8
+68 8 8
+70 8 8
+72 8 8
+74 c 12
+76 c 12
+78 c 12
+80 c 12
+82 10 16
+84 10 16
+86 10 16
+88 10 16
+90 14 20
+92 14 20
+94 14 20
+96 14 20
+98 18 24
+100 18 24
+102 18 24
+104 18 24
+106 80 128
+108 80 128
+110 80 128
+112 80 128
+114 e8 232
+116 e8 232
+118 e8 232
+120 e8 232
+122 150 336
+124 150 336
+126 150 336
+128 150 336
+130 1b8 440
+132 1b8 440
+134 1b8 440
+136 1b8 440
+138 220 544
+140 220 544
+142 220 544
+144 220 544
+146 288 xxxxxxxx
+148 288 xxxxxxxx
+150 288 xxxxxxxx
+152 288 xxxxxxxx
+154 28 40
+156 28 40
+158 28 40
+160 28 40
+162 28 40
+164 28 40
+166 28 40
+168 28 40
+170 28 40
+172 28 40
+174 28 40
+176 28 40
+178 28 40
+180 28 40
+182 28 40
+184 28 40
+186 28 40
+188 28 40
+190 28 40
+192 28 40
+194 28 40
+196 28 40
+198 28 40
+200 28 40
+202 b 11
+204 b 11
+206 b 11
+208 b 11
+210 b 11
+212 b 11
+214 b 11
+216 b 11
+218 b 11
+220 b 11
+222 b 11
+224 b 11
+226 b 11
+228 b 11
+230 b 11
+232 b 11
+234 b 11
+236 b 11
+238 b 11
+240 b 11
+242 b 11
+244 b 11
+246 b 11
+248 b 11
+250 b 11
+252 b 11
+254 b 11
+256 b 11
+258 f 15
+260 f 15
+262 f 15
+264 f 15
+266 13 19
+268 13 19
+270 13 19
+272 13 19
+274 17 23
+276 17 23
+278 17 23
+280 17 23
+282 1b 27
+284 1b 27
+286 1b 27
+288 1b 27
+290 1f 31
+292 1f 31
+294 1f 31
+296 1f 31
+298 23 35
+300 23 35
+302 23 35
+304 23 35
+306 27 39
+308 27 39
+310 27 39
+312 27 39
+314 2b 43
+316 2b 43
+318 2b 43
+320 2b 43
+322 2f 47
+324 2f 47
+326 2f 47
+328 2f 47
+330 33 51
+332 33 51
+334 33 51
+336 33 51
+338 37 55
+340 37 55
+342 37 55
+344 37 55
+346 3b 59
+348 3b 59
+$finish called at time : 350 ns : File "C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sim_1/new/IFU_tb.v" Line 45
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'IFU_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 3391.246 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/pen/Desktop/FPGA/IFU/IFU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'IFU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/pen/Desktop/FPGA/IFU/IFU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj IFU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sim_1/new/IFU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFU
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'IFU' [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:23]
+INFO: [VRFC 10-311] analyzing module IFU_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/pen/Desktop/FPGA/IFU/IFU.sim/sim_1/behav/xsim'
+"xelab -wto c2908ae65526437484f3a67d1b91fa7d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot IFU_tb_behav xil_defaultlib.IFU_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/PenProgram/Xilinx/vivado/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto c2908ae65526437484f3a67d1b91fa7d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot IFU_tb_behav xil_defaultlib.IFU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.IFU
+Compiling module xil_defaultlib.IFU_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot IFU_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/pen/Desktop/FPGA/IFU/IFU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "IFU_tb_behav -key {Behavioral:sim_1:Functional:IFU_tb} -tclbatch {IFU_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source IFU_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+2 0 33ac021
+4 0 33ac021
+6 0 33ac021
+8 0 33ac021
+10 0 33ac021
+12 0 33ac021
+14 0 33ac021
+16 0 33ac021
+18 0 33ac021
+20 0 33ac021
+22 0 33ac021
+24 0 33ac021
+26 0 33ac021
+28 0 33ac021
+30 0 33ac021
+32 0 33ac021
+34 0 33ac021
+36 0 33ac021
+38 0 33ac021
+40 0 33ac021
+42 0 33ac021
+44 0 33ac021
+46 0 33ac021
+48 0 33ac021
+50 0 33ac021
+52 0 33ac021
+54 0 33ac021
+56 0 33ac021
+58 4 33ac023
+60 4 33ac023
+62 4 33ac023
+64 4 33ac023
+66 8 8
+68 8 8
+70 8 8
+72 8 8
+74 c 12
+76 c 12
+78 c 12
+80 c 12
+82 10 16
+84 10 16
+86 10 16
+88 10 16
+90 14 20
+92 14 20
+94 14 20
+96 14 20
+98 18 24
+100 18 24
+102 18 24
+104 18 24
+106 80 128
+108 80 128
+110 80 128
+112 80 128
+114 e8 232
+116 e8 232
+118 e8 232
+120 e8 232
+122 150 336
+124 150 336
+126 150 336
+128 150 336
+130 1b8 440
+132 1b8 440
+134 1b8 440
+136 1b8 440
+138 220 544
+140 220 544
+142 220 544
+144 220 544
+146 288 xxxxxxxx
+148 288 xxxxxxxx
+150 288 xxxxxxxx
+152 288 xxxxxxxx
+154 28 40
+156 28 40
+158 28 40
+160 28 40
+162 28 40
+164 28 40
+166 28 40
+168 28 40
+170 28 40
+172 28 40
+174 28 40
+176 28 40
+178 28 40
+180 28 40
+182 28 40
+184 28 40
+186 28 40
+188 28 40
+190 28 40
+192 28 40
+194 28 40
+196 28 40
+198 28 40
+200 28 40
+202 b 11
+204 b 11
+206 b 11
+208 b 11
+210 b 11
+212 b 11
+214 b 11
+216 b 11
+218 b 11
+220 b 11
+222 b 11
+224 b 11
+226 b 11
+228 b 11
+230 b 11
+232 b 11
+234 b 11
+236 b 11
+238 b 11
+240 b 11
+242 b 11
+244 b 11
+246 b 11
+248 b 11
+250 b 11
+252 b 11
+254 b 11
+256 b 11
+258 f 15
+260 f 15
+262 f 15
+264 f 15
+266 13 19
+268 13 19
+270 13 19
+272 13 19
+274 17 23
+276 17 23
+278 17 23
+280 17 23
+282 1b 27
+284 1b 27
+286 1b 27
+288 1b 27
+290 1f 31
+292 1f 31
+294 1f 31
+296 1f 31
+298 23 35
+300 23 35
+302 23 35
+304 23 35
+306 27 39
+308 27 39
+310 27 39
+312 27 39
+314 2b 43
+316 2b 43
+318 2b 43
+320 2b 43
+322 2f 47
+324 2f 47
+326 2f 47
+328 2f 47
+330 33 51
+332 33 51
+334 33 51
+336 33 51
+338 37 55
+340 37 55
+342 37 55
+344 37 55
+346 3b 59
+348 3b 59
+$finish called at time : 350 ns : File "C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sim_1/new/IFU_tb.v" Line 45
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'IFU_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 3391.246 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/pen/Desktop/FPGA/IFU/IFU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'IFU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/pen/Desktop/FPGA/IFU/IFU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj IFU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sim_1/new/IFU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFU
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'IFU' [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:23]
+INFO: [VRFC 10-311] analyzing module IFU_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/pen/Desktop/FPGA/IFU/IFU.sim/sim_1/behav/xsim'
+"xelab -wto c2908ae65526437484f3a67d1b91fa7d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot IFU_tb_behav xil_defaultlib.IFU_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/PenProgram/Xilinx/vivado/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto c2908ae65526437484f3a67d1b91fa7d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot IFU_tb_behav xil_defaultlib.IFU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.IFU
+Compiling module xil_defaultlib.IFU_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot IFU_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/pen/Desktop/FPGA/IFU/IFU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "IFU_tb_behav -key {Behavioral:sim_1:Functional:IFU_tb} -tclbatch {IFU_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source IFU_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+2 0 0
+4 0 0
+6 0 0
+8 0 0
+10 0 0
+12 0 0
+14 0 0
+16 0 0
+18 0 0
+20 0 0
+22 0 0
+24 0 0
+26 0 0
+28 0 0
+30 0 0
+32 0 0
+34 0 0
+36 0 0
+38 0 0
+40 0 0
+42 0 0
+44 0 0
+46 0 0
+48 0 0
+50 0 0
+52 0 0
+54 0 0
+56 0 0
+58 4 4
+60 4 4
+62 4 4
+64 4 4
+66 8 8
+68 8 8
+70 8 8
+72 8 8
+74 c 12
+76 c 12
+78 c 12
+80 c 12
+82 10 16
+84 10 16
+86 10 16
+88 10 16
+90 14 20
+92 14 20
+94 14 20
+96 14 20
+98 18 24
+100 18 24
+102 18 24
+104 18 24
+106 80 128
+108 80 128
+110 80 128
+112 80 128
+114 e8 232
+116 e8 232
+118 e8 232
+120 e8 232
+122 150 336
+124 150 336
+126 150 336
+128 150 336
+130 1b8 440
+132 1b8 440
+134 1b8 440
+136 1b8 440
+138 220 544
+140 220 544
+142 220 544
+144 220 544
+146 288 xxxxxxxx
+148 288 xxxxxxxx
+150 288 xxxxxxxx
+152 288 xxxxxxxx
+154 28 40
+156 28 40
+158 28 40
+160 28 40
+162 28 40
+164 28 40
+166 28 40
+168 28 40
+170 28 40
+172 28 40
+174 28 40
+176 28 40
+178 28 40
+180 28 40
+182 28 40
+184 28 40
+186 28 40
+188 28 40
+190 28 40
+192 28 40
+194 28 40
+196 28 40
+198 28 40
+200 28 40
+202 b 11
+204 b 11
+206 b 11
+208 b 11
+210 b 11
+212 b 11
+214 b 11
+216 b 11
+218 b 11
+220 b 11
+222 b 11
+224 b 11
+226 b 11
+228 b 11
+230 b 11
+232 b 11
+234 b 11
+236 b 11
+238 b 11
+240 b 11
+242 b 11
+244 b 11
+246 b 11
+248 b 11
+250 b 11
+252 b 11
+254 b 11
+256 b 11
+258 f 15
+260 f 15
+262 f 15
+264 f 15
+266 13 19
+268 13 19
+270 13 19
+272 13 19
+274 17 23
+276 17 23
+278 17 23
+280 17 23
+282 1b 27
+284 1b 27
+286 1b 27
+288 1b 27
+290 1f 31
+292 1f 31
+294 1f 31
+296 1f 31
+298 23 35
+300 23 35
+302 23 35
+304 23 35
+306 27 39
+308 27 39
+310 27 39
+312 27 39
+314 2b 43
+316 2b 43
+318 2b 43
+320 2b 43
+322 2f 47
+324 2f 47
+326 2f 47
+328 2f 47
+330 33 51
+332 33 51
+334 33 51
+336 33 51
+338 37 55
+340 37 55
+342 37 55
+344 37 55
+346 3b 59
+348 3b 59
+$finish called at time : 350 ns : File "C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sim_1/new/IFU_tb.v" Line 45
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'IFU_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 3391.246 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/pen/Desktop/FPGA/IFU/IFU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'IFU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/pen/Desktop/FPGA/IFU/IFU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj IFU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sim_1/new/IFU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFU_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/pen/Desktop/FPGA/IFU/IFU.sim/sim_1/behav/xsim'
+"xelab -wto c2908ae65526437484f3a67d1b91fa7d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot IFU_tb_behav xil_defaultlib.IFU_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/PenProgram/Xilinx/vivado/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto c2908ae65526437484f3a67d1b91fa7d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot IFU_tb_behav xil_defaultlib.IFU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.IFU
+Compiling module xil_defaultlib.IFU_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot IFU_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/pen/Desktop/FPGA/IFU/IFU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "IFU_tb_behav -key {Behavioral:sim_1:Functional:IFU_tb} -tclbatch {IFU_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source IFU_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+2 0 0
+4 0 0
+6 0 0
+8 0 0
+10 0 0
+12 0 0
+14 0 0
+16 0 0
+18 0 0
+20 0 0
+22 0 0
+24 0 0
+26 0 0
+28 0 0
+30 0 0
+32 0 0
+34 0 0
+36 0 0
+38 0 0
+40 0 0
+42 0 0
+44 0 0
+46 0 0
+48 0 0
+50 0 0
+52 0 0
+54 0 0
+56 0 0
+58 4 4
+60 4 4
+62 4 4
+64 4 4
+66 8 8
+68 8 8
+70 8 8
+72 8 8
+74 c 12
+76 c 12
+78 c 12
+80 c 12
+82 10 16
+84 10 16
+86 10 16
+88 10 16
+90 14 20
+92 14 20
+94 14 20
+96 14 20
+98 18 24
+100 18 24
+102 18 24
+104 18 24
+106 80 128
+108 80 128
+110 80 128
+112 80 128
+114 e8 232
+116 e8 232
+118 e8 232
+120 e8 232
+122 150 336
+124 150 336
+126 150 336
+128 150 336
+130 1b8 440
+132 1b8 440
+134 1b8 440
+136 1b8 440
+138 220 544
+140 220 544
+142 220 544
+144 220 544
+146 288 xxxxxxxx
+148 288 xxxxxxxx
+150 288 xxxxxxxx
+152 288 xxxxxxxx
+154 28 40
+156 28 40
+158 28 40
+160 28 40
+162 28 40
+164 28 40
+166 28 40
+168 28 40
+170 28 40
+172 28 40
+174 28 40
+176 28 40
+178 28 40
+180 28 40
+182 28 40
+184 28 40
+186 28 40
+188 28 40
+190 28 40
+192 28 40
+194 28 40
+196 28 40
+198 28 40
+200 28 40
+202 b 11
+204 b 11
+206 b 11
+208 b 11
+210 b 11
+212 b 11
+214 b 11
+216 b 11
+218 b 11
+220 b 11
+222 b 11
+224 b 11
+226 b 11
+228 b 11
+230 b 11
+232 b 11
+234 b 11
+236 b 11
+238 b 11
+240 b 11
+242 b 11
+244 b 11
+246 b 11
+248 b 11
+250 b 11
+252 b 11
+254 b 11
+256 b 11
+258 f 15
+260 f 15
+262 f 15
+264 f 15
+266 13 19
+268 13 19
+270 13 19
+272 13 19
+274 17 23
+276 17 23
+278 17 23
+280 17 23
+282 1b 27
+284 1b 27
+286 1b 27
+288 1b 27
+290 1f 31
+292 1f 31
+294 1f 31
+296 1f 31
+298 23 35
+300 23 35
+302 23 35
+304 23 35
+306 27 39
+308 27 39
+310 27 39
+312 27 39
+314 2b 43
+316 2b 43
+318 2b 43
+320 2b 43
+322 2f 47
+324 2f 47
+326 2f 47
+328 2f 47
+330 33 51
+332 33 51
+334 33 51
+336 33 51
+338 37 55
+340 37 55
+342 37 55
+344 37 55
+346 3b 59
+348 3b 59
+$finish called at time : 350 ns : File "C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sim_1/new/IFU_tb.v" Line 84
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'IFU_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 3391.246 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/pen/Desktop/FPGA/IFU/IFU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'IFU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/pen/Desktop/FPGA/IFU/IFU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj IFU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sim_1/new/IFU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFU_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/pen/Desktop/FPGA/IFU/IFU.sim/sim_1/behav/xsim'
+"xelab -wto c2908ae65526437484f3a67d1b91fa7d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot IFU_tb_behav xil_defaultlib.IFU_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/PenProgram/Xilinx/vivado/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto c2908ae65526437484f3a67d1b91fa7d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot IFU_tb_behav xil_defaultlib.IFU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'NPC' on this module [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sim_1/new/IFU_tb.v:69]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/pen/Desktop/FPGA/IFU/IFU.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/pen/Desktop/FPGA/IFU/IFU.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/pen/Desktop/FPGA/IFU/IFU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'IFU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/pen/Desktop/FPGA/IFU/IFU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj IFU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sim_1/new/IFU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFU_tb
+ERROR: [VRFC 10-1247] port connections cannot be mixed ordered and named [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sim_1/new/IFU_tb.v:69]
+ERROR: [VRFC 10-2865] module 'IFU_tb' ignored due to previous errors [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sim_1/new/IFU_tb.v:62]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/pen/Desktop/FPGA/IFU/IFU.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/pen/Desktop/FPGA/IFU/IFU.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/pen/Desktop/FPGA/IFU/IFU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'IFU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/pen/Desktop/FPGA/IFU/IFU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj IFU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sim_1/new/IFU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFU_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/pen/Desktop/FPGA/IFU/IFU.sim/sim_1/behav/xsim'
+"xelab -wto c2908ae65526437484f3a67d1b91fa7d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot IFU_tb_behav xil_defaultlib.IFU_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/PenProgram/Xilinx/vivado/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto c2908ae65526437484f3a67d1b91fa7d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot IFU_tb_behav xil_defaultlib.IFU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.IFU
+Compiling module xil_defaultlib.IFU_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot IFU_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/pen/Desktop/FPGA/IFU/IFU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "IFU_tb_behav -key {Behavioral:sim_1:Functional:IFU_tb} -tclbatch {IFU_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source IFU_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+8	 @00000000:	 $00000000	
+16	 @00000000:	 $00000000	
+24	 @0000000c:	 $00000012	
+32	 @00000008:	 $00000008	
+40	 @00000002:	 $00000002	
+48	 @00000006:	 $00000006	
+56	 @0000000a:	 $00000010	
+64	 @80000000:	 $xxxxxxxx	
+72	 @80000008:	 $xxxxxxxx	
+80	 @00000000:	 $00000000	
+88	 @00000008:	 $00000008	
+96	 @000003ff:	 $xxxxxxxx	
+$finish called at time : 101 ns : File "C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sim_1/new/IFU_tb.v" Line 91
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'IFU_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 3391.246 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri May 19 15:52:01 2023...

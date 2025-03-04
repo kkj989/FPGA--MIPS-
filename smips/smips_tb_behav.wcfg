@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="smips_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="smips_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="174290fs"></ZoomStartTime>
+      <ZoomEndTime time="264491fs"></ZoomEndTime>
+      <Cursor1Time time="470000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="226"></NameColumnWidth>
+      <ValueColumnWidth column_width="144"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="16" />
+   <wvobject fp_name="/smips_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/smips_tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/smips_tb/u1/u6/u3/writeEn" type="logic">
+      <obj_property name="ElementShortName">writeEn</obj_property>
+      <obj_property name="ObjectShortName">writeEn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/smips_tb/u1/u6/u1/ctrlIn" type="array">
+      <obj_property name="ElementShortName">ctrlIn[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ctrlIn[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/smips_tb/u1/u6/u1/instruc" type="array">
+      <obj_property name="ElementShortName">instruc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instruc[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/smips_tb/u1/u6/u1/cPC" type="array">
+      <obj_property name="ElementShortName">cPC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cPC[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/smips_tb/u1/u6/u1/nPC" type="array">
+      <obj_property name="ElementShortName">nPC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">nPC[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/smips_tb/u1/u6/u4/dataInA" type="array">
+      <obj_property name="ElementShortName">dataInA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dataInA[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/smips_tb/u1/u6/u4/dataInB" type="array">
+      <obj_property name="ElementShortName">dataInB[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dataInB[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/smips_tb/u1/u6/u4/dataOut" type="array">
+      <obj_property name="ElementShortName">dataOut[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dataOut[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/smips_tb/u1/u6/u4/OF" type="logic">
+      <obj_property name="ElementShortName">OF</obj_property>
+      <obj_property name="ObjectShortName">OF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/smips_tb/u1/u6/u3/rf" type="array">
+      <obj_property name="ElementShortName">rf[31:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">rf[31:0][31:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <obj_property name="Reversed">false</obj_property>
+   </wvobject>
+   <wvobject fp_name="/smips_tb/u1/u6/u4/ctrlIn" type="array">
+      <obj_property name="ElementShortName">ctrlIn[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ctrlIn[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/smips_tb/u1/u6/u3/rdataOut1" type="array">
+      <obj_property name="ElementShortName">rdataOut1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rdataOut1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/smips_tb/u1/u6/u3/rdataOut2" type="array">
+      <obj_property name="ElementShortName">rdataOut2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rdataOut2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/smips_tb/u1/u6/u1/PC" type="array">
+      <obj_property name="ElementShortName">PC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC[31:0]</obj_property>
+   </wvobject>
+</wave_config>

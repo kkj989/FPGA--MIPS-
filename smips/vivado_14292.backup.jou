@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Jun  8 23:57:18 2024
+# Process ID: 14292
+# Current directory: D:/Vivado2020_2/FPGA/smips
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3204 D:\Vivado2020_2\FPGA\smips\smips.xpr
+# Log file: D:/Vivado2020_2/FPGA/smips/vivado.log
+# Journal file: D:/Vivado2020_2/FPGA/smips\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project -read_only D:/Vivado2020_2/FPGA/smips/smips.xpr
+update_compile_order -fileset sources_1

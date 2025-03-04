@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Jun  3 14:05:20 2023
+# Process ID: 28192
+# Current directory: C:/Users/pen/Desktop/FPGA/IFU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28096 C:\Users\pen\Desktop\FPGA\IFU\IFU.xpr
+# Log file: C:/Users/pen/Desktop/FPGA/IFU/vivado.log
+# Journal file: C:/Users/pen/Desktop/FPGA/IFU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/pen/Desktop/FPGA/IFU/IFU.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source IFU_tb.tcl
+close_sim
+launch_simulation
+source IFU_tb.tcl
+close_sim
+launch_simulation
+source IFU_tb.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+source IFU_tb.tcl
+close_sim
+launch_simulation
+source IFU_tb.tcl
+relaunch_sim
+relaunch_sim
+close_sim

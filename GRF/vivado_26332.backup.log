@@ -1,0 +1,1182 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Jun  3 09:27:50 2023
+# Process ID: 26332
+# Current directory: C:/Users/pen/Desktop/FPGA/GRF
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26840 C:\Users\pen\Desktop\FPGA\GRF\GRF.xpr
+# Log file: C:/Users/pen/Desktop/FPGA/GRF/vivado.log
+# Journal file: C:/Users/pen/Desktop/FPGA/GRF\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/pen/Desktop/FPGA/GRF/GRF.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/PenProgram/Xilinx/vivado/Vivado/2019.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/pen/Desktop/FPGA/GRF/GRF.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'GRF_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/pen/Desktop/FPGA/GRF/GRF.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj GRF_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pen/Desktop/FPGA/GRF/GRF.srcs/sources_1/new/GRF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GRF
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pen/Desktop/FPGA/GRF/GRF.srcs/sim_1/new/GRF_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GRF_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/pen/Desktop/FPGA/GRF/GRF.sim/sim_1/behav/xsim'
+"xelab -wto 26a7c84f1a3a4494ba313545eb846383 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot GRF_tb_behav xil_defaultlib.GRF_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/PenProgram/Xilinx/vivado/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 26a7c84f1a3a4494ba313545eb846383 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot GRF_tb_behav xil_defaultlib.GRF_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.GRF
+Compiling module xil_defaultlib.GRF_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot GRF_tb_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/pen/Desktop/FPGA/GRF/GRF.sim/sim_1/behav/xsim/xsim.dir/GRF_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/pen/Desktop/FPGA/GRF/GRF.sim/sim_1/behav/xsim/xsim.dir/GRF_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sat Jun  3 09:28:15 2023. For additional details about this file, please refer to the WebTalk help file at C:/PenProgram/Xilinx/vivado/Vivado/2019.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sat Jun  3 09:28:15 2023...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 803.891 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/pen/Desktop/FPGA/GRF/GRF.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "GRF_tb_behav -key {Behavioral:sim_1:Functional:GRF_tb} -tclbatch {GRF_tb.tcl} -view {C:/Users/pen/Desktop/FPGA/GRF/GRF_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config C:/Users/pen/Desktop/FPGA/GRF/GRF_tb_behav.wcfg
+WARNING: Simulation object /GRF_tb/i was not found in the design.
+source GRF_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ns
+2[$0d,$Od]=>{xx,xxh}          x         x
+4[$0d,$Od]=>{xx,xxh}          x         x
+6[$0d,$Od]=>{xx,xxh}          x         x
+8[$0d,$Od]=>{xx,xxh}          x         x
+10[$0d,$Od]=>{xx,xxh}          x         x
+12[$0d,$Od]=>{xx,xxh}          x         x
+14[$0d,$Od]=>{xx,xxh}          x         x
+16[$0d,$Od]=>{xx,xxh}          x         x
+18[$0d,$Od]=>{xx,xxh}          x         x
+20[$0d,$Od]=>{0,00h}          x         x
+$ 0 <= 00000001
+22[$0d,$Od]=>{0,00h}          0         0
+$ 0 <= 00000001
+24[$0d,$Od]=>{0,00h}          0         0
+$ 0 <= 00000001
+26[$0d,$Od]=>{0,00h}          0         0
+$ 0 <= 00000001
+28[$0d,$Od]=>{0,00h}          0         0
+$ 0 <= 00000001
+30[$0d,$Od]=>{0,00h}          0         0
+32[$0d,$Od]=>{0,00h}          0         0
+34[$0d,$Od]=>{0,00h}          0         0
+36[$0d,$Od]=>{0,00h}          0         0
+38[$0d,$Od]=>{0,00h}          0         0
+40[$0d,$Od]=>{a,24h}          0         0
+$10 <= 00000002
+42[$0d,$Od]=>{a,24h}          2         0
+$10 <= 00000002
+44[$0d,$Od]=>{a,24h}          2         0
+$10 <= 00000002
+46[$0d,$Od]=>{a,24h}          2         0
+$10 <= 00000002
+48[$0d,$Od]=>{a,24h}          2         0
+$10 <= 00000002
+50[$0d,$Od]=>{a,24h}          2         0
+52[$0d,$Od]=>{a,24h}          2         0
+54[$0d,$Od]=>{a,24h}          2         0
+56[$0d,$Od]=>{a,24h}          2         0
+58[$0d,$Od]=>{a,24h}          2         0
+60[$0d,$Od]=>{a,24h}          2         0
+$20 <= 00000003
+62[$0d,$Od]=>{a,24h}          2         0
+$20 <= 00000003
+64[$0d,$Od]=>{a,24h}          2         0
+$20 <= 00000003
+66[$0d,$Od]=>{a,24h}          2         3
+$20 <= 00000003
+68[$0d,$Od]=>{a,24h}          2         3
+$20 <= 00000003
+70[$0d,$Od]=>{a,24h}          2         3
+72[$0d,$Od]=>{a,24h}          2         3
+74[$0d,$Od]=>{a,24h}          2         3
+76[$0d,$Od]=>{a,24h}          2         3
+78[$0d,$Od]=>{a,24h}          2         3
+80[$0d,$Od]=>{a,24h}          2         3
+82[$0d,$Od]=>{a,24h}          2         3
+84[$0d,$Od]=>{a,24h}          2         3
+86[$0d,$Od]=>{a,24h}          2         3
+88[$0d,$Od]=>{a,24h}          2         3
+$finish called at time : 90 ns : File "C:/Users/pen/Desktop/FPGA/GRF/GRF.srcs/sim_1/new/GRF_tb.v" Line 120
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'GRF_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 855.695 ; gain = 53.184
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 855.695 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/pen/Desktop/FPGA/GRF/GRF.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'GRF_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/pen/Desktop/FPGA/GRF/GRF.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj GRF_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pen/Desktop/FPGA/GRF/GRF.srcs/sources_1/new/GRF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GRF
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/pen/Desktop/FPGA/GRF/GRF.srcs/sim_1/new/GRF_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GRF_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/pen/Desktop/FPGA/GRF/GRF.sim/sim_1/behav/xsim'
+"xelab -wto 26a7c84f1a3a4494ba313545eb846383 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot GRF_tb_behav xil_defaultlib.GRF_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/PenProgram/Xilinx/vivado/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 26a7c84f1a3a4494ba313545eb846383 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot GRF_tb_behav xil_defaultlib.GRF_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.GRF
+Compiling module xil_defaultlib.GRF_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot GRF_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/pen/Desktop/FPGA/GRF/GRF.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "GRF_tb_behav -key {Behavioral:sim_1:Functional:GRF_tb} -tclbatch {GRF_tb.tcl} -view {C:/Users/pen/Desktop/FPGA/GRF/GRF_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config C:/Users/pen/Desktop/FPGA/GRF/GRF_tb_behav.wcfg
+source GRF_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ns
+2 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+4 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+6 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+8 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+10 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ x <= 11111111
+12 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ x <= 11111111
+14 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ x <= 11111111
+16 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ x <= 11111111
+18 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ x <= 11111111
+20 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ x <= 11111111
+22 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ x <= 11111111
+24 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ x <= 11111111
+26 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ x <= 11111111
+28 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ x <= 11111111
+30 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 0 <= 11111111
+32 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 0 <= 11111111
+34 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 0 <= 11111111
+36 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 0 <= 11111111
+38 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 0 <= 11111111
+40 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 0 <= 11111111
+42 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 0 <= 11111111
+44 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 0 <= 11111111
+46 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 0 <= 11111111
+48 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 0 <= 11111111
+50 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 1 <= 11111111
+52 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 1 <= 11111111
+54 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 1 <= 11111111
+56 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 1 <= 11111111
+58 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 1 <= 11111111
+60 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 1 <= 11111111
+62 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 1 <= 11111111
+64 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 1 <= 11111111
+66 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 1 <= 11111111
+68 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 1 <= 11111111
+70 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 2 <= 11111111
+72 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 2 <= 11111111
+74 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 2 <= 11111111
+76 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 2 <= 11111111
+78 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 2 <= 11111111
+80 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 2 <= 11111111
+82 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 2 <= 11111111
+84 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 2 <= 11111111
+86 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 2 <= 11111111
+88 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 2 <= 11111111
+90 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 3 <= 11111111
+92 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 3 <= 11111111
+94 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 3 <= 11111111
+96 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 3 <= 11111111
+98 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 3 <= 11111111
+100 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 3 <= 11111111
+102 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 3 <= 11111111
+104 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 3 <= 11111111
+106 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 3 <= 11111111
+108 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 3 <= 11111111
+110 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 4 <= 11111111
+112 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 4 <= 11111111
+114 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 4 <= 11111111
+116 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 4 <= 11111111
+118 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 4 <= 11111111
+120 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 4 <= 11111111
+122 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 4 <= 11111111
+124 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 4 <= 11111111
+126 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 4 <= 11111111
+128 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 4 <= 11111111
+130 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 5 <= 11111111
+132 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 5 <= 11111111
+134 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 5 <= 11111111
+136 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 5 <= 11111111
+138 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 5 <= 11111111
+140 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 5 <= 11111111
+142 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 5 <= 11111111
+144 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 5 <= 11111111
+146 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 5 <= 11111111
+148 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 5 <= 11111111
+150 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 6 <= 11111111
+152 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 6 <= 11111111
+154 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 6 <= 11111111
+156 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 6 <= 11111111
+158 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 6 <= 11111111
+160 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 6 <= 11111111
+162 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 6 <= 11111111
+164 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 6 <= 11111111
+166 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 6 <= 11111111
+168 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 6 <= 11111111
+170 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 7 <= 11111111
+172 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 7 <= 11111111
+174 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 7 <= 11111111
+176 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 7 <= 11111111
+178 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 7 <= 11111111
+180 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 7 <= 11111111
+182 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 7 <= 11111111
+184 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 7 <= 11111111
+186 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 7 <= 11111111
+188 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 7 <= 11111111
+190 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 8 <= 11111111
+192 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 8 <= 11111111
+194 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 8 <= 11111111
+196 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 8 <= 11111111
+198 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 8 <= 11111111
+200 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 8 <= 11111111
+202 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 8 <= 11111111
+204 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 8 <= 11111111
+206 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 8 <= 11111111
+208 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 8 <= 11111111
+210 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 9 <= 11111111
+212 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 9 <= 11111111
+214 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 9 <= 11111111
+216 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 9 <= 11111111
+218 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 9 <= 11111111
+220 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 9 <= 11111111
+222 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 9 <= 11111111
+224 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 9 <= 11111111
+226 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 9 <= 11111111
+228 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$ 9 <= 11111111
+230 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$10 <= 11111111
+232 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$10 <= 11111111
+234 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$10 <= 11111111
+236 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$10 <= 11111111
+238 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$10 <= 11111111
+240 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$10 <= 11111111
+242 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$10 <= 11111111
+244 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$10 <= 11111111
+246 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$10 <= 11111111
+248 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$10 <= 11111111
+250 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$11 <= 11111111
+252 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$11 <= 11111111
+254 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$11 <= 11111111
+256 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$11 <= 11111111
+258 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$11 <= 11111111
+260 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$11 <= 11111111
+262 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$11 <= 11111111
+264 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$11 <= 11111111
+266 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$11 <= 11111111
+268 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$11 <= 11111111
+270 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$12 <= 11111111
+272 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$12 <= 11111111
+274 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$12 <= 11111111
+276 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$12 <= 11111111
+278 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$12 <= 11111111
+280 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$12 <= 11111111
+282 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$12 <= 11111111
+284 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$12 <= 11111111
+286 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$12 <= 11111111
+288 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$12 <= 11111111
+290 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$13 <= 11111111
+292 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$13 <= 11111111
+294 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$13 <= 11111111
+296 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$13 <= 11111111
+298 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$13 <= 11111111
+300 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$13 <= 11111111
+302 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$13 <= 11111111
+304 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$13 <= 11111111
+306 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$13 <= 11111111
+308 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$13 <= 11111111
+310 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$14 <= 11111111
+312 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$14 <= 11111111
+314 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$14 <= 11111111
+316 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$14 <= 11111111
+318 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$14 <= 11111111
+320 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$14 <= 11111111
+322 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$14 <= 11111111
+324 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$14 <= 11111111
+326 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$14 <= 11111111
+328 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$14 <= 11111111
+330 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$15 <= 00000000
+332 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$15 <= 00000000
+334 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$15 <= 00000000
+336 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$15 <= 00000000
+338 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$15 <= 00000000
+340 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$15 <= 00000000
+342 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$15 <= 00000000
+344 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$15 <= 00000000
+346 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$15 <= 00000000
+348 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$15 <= 00000000
+350 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$16 <= 00000000
+352 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$16 <= 00000000
+354 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$16 <= 00000000
+356 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$16 <= 00000000
+358 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$16 <= 00000000
+360 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$16 <= 00000000
+362 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$16 <= 00000000
+364 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$16 <= 00000000
+366 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$16 <= 00000000
+368 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$16 <= 00000000
+370 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$17 <= 00000000
+372 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$17 <= 00000000
+374 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$17 <= 00000000
+376 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$17 <= 00000000
+378 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$17 <= 00000000
+380 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$17 <= 00000000
+382 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$17 <= 00000000
+384 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$17 <= 00000000
+386 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$17 <= 00000000
+388 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$17 <= 00000000
+390 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$18 <= 00000000
+392 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$18 <= 00000000
+394 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$18 <= 00000000
+396 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$18 <= 00000000
+398 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$18 <= 00000000
+400 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$18 <= 00000000
+402 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$18 <= 00000000
+404 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$18 <= 00000000
+406 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$18 <= 00000000
+408 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$18 <= 00000000
+410 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$19 <= 00000000
+412 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$19 <= 00000000
+414 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$19 <= 00000000
+416 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$19 <= 00000000
+418 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$19 <= 00000000
+420 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$19 <= 00000000
+422 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$19 <= 00000000
+424 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$19 <= 00000000
+426 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$19 <= 00000000
+428 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$19 <= 00000000
+430 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$20 <= 00000000
+432 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$20 <= 00000000
+434 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$20 <= 00000000
+436 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$20 <= 00000000
+438 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$20 <= 00000000
+440 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$20 <= 00000000
+442 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$20 <= 00000000
+444 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$20 <= 00000000
+446 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$20 <= 00000000
+448 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$20 <= 00000000
+450 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$21 <= 00000000
+452 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$21 <= 00000000
+454 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$21 <= 00000000
+456 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$21 <= 00000000
+458 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$21 <= 00000000
+460 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$21 <= 00000000
+462 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$21 <= 00000000
+464 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$21 <= 00000000
+466 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$21 <= 00000000
+468 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$21 <= 00000000
+470 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$22 <= 00000000
+472 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$22 <= 00000000
+474 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$22 <= 00000000
+476 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$22 <= 00000000
+478 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$22 <= 00000000
+480 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$22 <= 00000000
+482 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$22 <= 00000000
+484 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$22 <= 00000000
+486 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$22 <= 00000000
+488 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$22 <= 00000000
+490 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$23 <= 00000000
+492 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$23 <= 00000000
+494 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$23 <= 00000000
+496 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$23 <= 00000000
+498 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$23 <= 00000000
+500 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$23 <= 00000000
+502 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$23 <= 00000000
+504 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$23 <= 00000000
+506 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$23 <= 00000000
+508 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$23 <= 00000000
+510 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$24 <= 00000000
+512 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$24 <= 00000000
+514 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$24 <= 00000000
+516 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$24 <= 00000000
+518 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$24 <= 00000000
+520 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$24 <= 00000000
+522 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$24 <= 00000000
+524 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$24 <= 00000000
+526 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$24 <= 00000000
+528 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$24 <= 00000000
+530 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$25 <= 00000000
+532 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$25 <= 00000000
+534 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$25 <= 00000000
+536 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$25 <= 00000000
+538 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$25 <= 00000000
+540 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$25 <= 00000000
+542 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$25 <= 00000000
+544 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$25 <= 00000000
+546 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$25 <= 00000000
+548 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$25 <= 00000000
+550 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$26 <= 00000000
+552 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$26 <= 00000000
+554 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$26 <= 00000000
+556 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$26 <= 00000000
+558 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$26 <= 00000000
+560 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$26 <= 00000000
+562 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$26 <= 00000000
+564 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$26 <= 00000000
+566 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$26 <= 00000000
+568 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$26 <= 00000000
+570 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$27 <= 00000000
+572 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$27 <= 00000000
+574 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$27 <= 00000000
+576 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$27 <= 00000000
+578 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$27 <= 00000000
+580 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$27 <= 00000000
+582 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$27 <= 00000000
+584 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$27 <= 00000000
+586 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$27 <= 00000000
+588 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$27 <= 00000000
+590 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$28 <= 00000000
+592 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$28 <= 00000000
+594 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$28 <= 00000000
+596 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$28 <= 00000000
+598 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$28 <= 00000000
+600 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$28 <= 00000000
+602 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$28 <= 00000000
+604 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$28 <= 00000000
+606 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$28 <= 00000000
+608 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$28 <= 00000000
+610 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$29 <= 00000000
+612 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$29 <= 00000000
+614 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$29 <= 00000000
+616 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$29 <= 00000000
+618 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$29 <= 00000000
+620 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$29 <= 00000000
+622 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$29 <= 00000000
+624 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$29 <= 00000000
+626 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$29 <= 00000000
+628 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$29 <= 00000000
+630 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$30 <= 00000000
+632 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$30 <= 00000000
+634 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$30 <= 00000000
+636 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$30 <= 00000000
+638 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$30 <= 00000000
+640 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$30 <= 00000000
+642 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$30 <= 00000000
+644 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$30 <= 00000000
+646 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$30 <= 00000000
+648 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$30 <= 00000000
+650 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$31 <= 00000000
+652 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$31 <= 00000000
+654 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$31 <= 00000000
+656 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$31 <= 00000000
+658 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+$31 <= 00000000
+660 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+662 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+664 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+666 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+668 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+670 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+672 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+674 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+676 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+678 {$x,$x}=>{xxxxxxxx,xxxxxxxx}
+680 {$0,$0}=>{xxxxxxxx,xxxxxxxx}
+682 {$0,$0}=>{xxxxxxxx,xxxxxxxx}
+684 {$0,$0}=>{xxxxxxxx,xxxxxxxx}
+686 {$0,$0}=>{xxxxxxxx,xxxxxxxx}
+688 {$0,$0}=>{xxxxxxxx,xxxxxxxx}
+690 {$0,$0}=>{xxxxxxxx,xxxxxxxx}
+692 {$0,$0}=>{xxxxxxxx,xxxxxxxx}
+694 {$0,$0}=>{xxxxxxxx,xxxxxxxx}
+696 {$0,$0}=>{xxxxxxxx,xxxxxxxx}
+698 {$0,$0}=>{xxxxxxxx,xxxxxxxx}
+700 {$1,$1}=>{xxxxxxxx,xxxxxxxx}
+702 {$1,$1}=>{xxxxxxxx,xxxxxxxx}
+704 {$1,$1}=>{xxxxxxxx,xxxxxxxx}
+706 {$1,$1}=>{xxxxxxxx,xxxxxxxx}
+708 {$1,$1}=>{xxxxxxxx,xxxxxxxx}
+710 {$1,$1}=>{xxxxxxxx,xxxxxxxx}
+712 {$1,$1}=>{xxxxxxxx,xxxxxxxx}
+714 {$1,$1}=>{xxxxxxxx,xxxxxxxx}
+716 {$1,$1}=>{xxxxxxxx,xxxxxxxx}
+718 {$1,$1}=>{xxxxxxxx,xxxxxxxx}
+720 {$2,$2}=>{xxxxxxxx,xxxxxxxx}
+722 {$2,$2}=>{xxxxxxxx,xxxxxxxx}
+724 {$2,$2}=>{xxxxxxxx,xxxxxxxx}
+726 {$2,$2}=>{xxxxxxxx,xxxxxxxx}
+728 {$2,$2}=>{xxxxxxxx,xxxxxxxx}
+730 {$2,$2}=>{xxxxxxxx,xxxxxxxx}
+732 {$2,$2}=>{xxxxxxxx,xxxxxxxx}
+734 {$2,$2}=>{xxxxxxxx,xxxxxxxx}
+736 {$2,$2}=>{xxxxxxxx,xxxxxxxx}
+738 {$2,$2}=>{xxxxxxxx,xxxxxxxx}
+740 {$3,$3}=>{xxxxxxxx,xxxxxxxx}
+742 {$3,$3}=>{xxxxxxxx,xxxxxxxx}
+744 {$3,$3}=>{xxxxxxxx,xxxxxxxx}
+746 {$3,$3}=>{xxxxxxxx,xxxxxxxx}
+748 {$3,$3}=>{xxxxxxxx,xxxxxxxx}
+750 {$3,$3}=>{xxxxxxxx,xxxxxxxx}
+752 {$3,$3}=>{xxxxxxxx,xxxxxxxx}
+754 {$3,$3}=>{xxxxxxxx,xxxxxxxx}
+756 {$3,$3}=>{xxxxxxxx,xxxxxxxx}
+758 {$3,$3}=>{xxxxxxxx,xxxxxxxx}
+760 {$4,$4}=>{xxxxxxxx,xxxxxxxx}
+762 {$4,$4}=>{xxxxxxxx,xxxxxxxx}
+764 {$4,$4}=>{xxxxxxxx,xxxxxxxx}
+766 {$4,$4}=>{xxxxxxxx,xxxxxxxx}
+768 {$4,$4}=>{xxxxxxxx,xxxxxxxx}
+770 {$4,$4}=>{xxxxxxxx,xxxxxxxx}
+772 {$4,$4}=>{xxxxxxxx,xxxxxxxx}
+774 {$4,$4}=>{xxxxxxxx,xxxxxxxx}
+776 {$4,$4}=>{xxxxxxxx,xxxxxxxx}
+778 {$4,$4}=>{xxxxxxxx,xxxxxxxx}
+780 {$5,$5}=>{xxxxxxxx,xxxxxxxx}
+782 {$5,$5}=>{xxxxxxxx,xxxxxxxx}
+784 {$5,$5}=>{xxxxxxxx,xxxxxxxx}
+786 {$5,$5}=>{xxxxxxxx,xxxxxxxx}
+788 {$5,$5}=>{xxxxxxxx,xxxxxxxx}
+790 {$5,$5}=>{xxxxxxxx,xxxxxxxx}
+792 {$5,$5}=>{xxxxxxxx,xxxxxxxx}
+794 {$5,$5}=>{xxxxxxxx,xxxxxxxx}
+796 {$5,$5}=>{xxxxxxxx,xxxxxxxx}
+798 {$5,$5}=>{xxxxxxxx,xxxxxxxx}
+800 {$6,$6}=>{xxxxxxxx,xxxxxxxx}
+802 {$6,$6}=>{xxxxxxxx,xxxxxxxx}
+804 {$6,$6}=>{xxxxxxxx,xxxxxxxx}
+806 {$6,$6}=>{xxxxxxxx,xxxxxxxx}
+808 {$6,$6}=>{xxxxxxxx,xxxxxxxx}
+810 {$6,$6}=>{xxxxxxxx,xxxxxxxx}
+812 {$6,$6}=>{xxxxxxxx,xxxxxxxx}
+814 {$6,$6}=>{xxxxxxxx,xxxxxxxx}
+816 {$6,$6}=>{xxxxxxxx,xxxxxxxx}
+818 {$6,$6}=>{xxxxxxxx,xxxxxxxx}
+820 {$7,$7}=>{xxxxxxxx,xxxxxxxx}
+822 {$7,$7}=>{xxxxxxxx,xxxxxxxx}
+824 {$7,$7}=>{xxxxxxxx,xxxxxxxx}
+826 {$7,$7}=>{xxxxxxxx,xxxxxxxx}
+828 {$7,$7}=>{xxxxxxxx,xxxxxxxx}
+830 {$7,$7}=>{xxxxxxxx,xxxxxxxx}
+832 {$7,$7}=>{xxxxxxxx,xxxxxxxx}
+834 {$7,$7}=>{xxxxxxxx,xxxxxxxx}
+836 {$7,$7}=>{xxxxxxxx,xxxxxxxx}
+838 {$7,$7}=>{xxxxxxxx,xxxxxxxx}
+840 {$8,$8}=>{xxxxxxxx,xxxxxxxx}
+842 {$8,$8}=>{xxxxxxxx,xxxxxxxx}
+844 {$8,$8}=>{xxxxxxxx,xxxxxxxx}
+846 {$8,$8}=>{xxxxxxxx,xxxxxxxx}
+848 {$8,$8}=>{xxxxxxxx,xxxxxxxx}
+850 {$8,$8}=>{xxxxxxxx,xxxxxxxx}
+852 {$8,$8}=>{xxxxxxxx,xxxxxxxx}
+854 {$8,$8}=>{xxxxxxxx,xxxxxxxx}
+856 {$8,$8}=>{xxxxxxxx,xxxxxxxx}
+858 {$8,$8}=>{xxxxxxxx,xxxxxxxx}
+860 {$9,$9}=>{xxxxxxxx,xxxxxxxx}
+862 {$9,$9}=>{xxxxxxxx,xxxxxxxx}
+864 {$9,$9}=>{xxxxxxxx,xxxxxxxx}
+866 {$9,$9}=>{xxxxxxxx,xxxxxxxx}
+868 {$9,$9}=>{xxxxxxxx,xxxxxxxx}
+870 {$9,$9}=>{xxxxxxxx,xxxxxxxx}
+872 {$9,$9}=>{xxxxxxxx,xxxxxxxx}
+874 {$9,$9}=>{xxxxxxxx,xxxxxxxx}
+876 {$9,$9}=>{xxxxxxxx,xxxxxxxx}
+878 {$9,$9}=>{xxxxxxxx,xxxxxxxx}
+880 {$10,$10}=>{xxxxxxxx,xxxxxxxx}
+882 {$10,$10}=>{xxxxxxxx,xxxxxxxx}
+884 {$10,$10}=>{xxxxxxxx,xxxxxxxx}
+886 {$10,$10}=>{xxxxxxxx,xxxxxxxx}
+888 {$10,$10}=>{xxxxxxxx,xxxxxxxx}
+890 {$10,$10}=>{xxxxxxxx,xxxxxxxx}
+892 {$10,$10}=>{xxxxxxxx,xxxxxxxx}
+894 {$10,$10}=>{xxxxxxxx,xxxxxxxx}
+896 {$10,$10}=>{xxxxxxxx,xxxxxxxx}
+898 {$10,$10}=>{xxxxxxxx,xxxxxxxx}
+900 {$11,$11}=>{xxxxxxxx,xxxxxxxx}
+902 {$11,$11}=>{xxxxxxxx,xxxxxxxx}
+904 {$11,$11}=>{xxxxxxxx,xxxxxxxx}
+906 {$11,$11}=>{xxxxxxxx,xxxxxxxx}
+908 {$11,$11}=>{xxxxxxxx,xxxxxxxx}
+910 {$11,$11}=>{xxxxxxxx,xxxxxxxx}
+912 {$11,$11}=>{xxxxxxxx,xxxxxxxx}
+914 {$11,$11}=>{xxxxxxxx,xxxxxxxx}
+916 {$11,$11}=>{xxxxxxxx,xxxxxxxx}
+918 {$11,$11}=>{xxxxxxxx,xxxxxxxx}
+920 {$12,$12}=>{xxxxxxxx,xxxxxxxx}
+922 {$12,$12}=>{xxxxxxxx,xxxxxxxx}
+924 {$12,$12}=>{xxxxxxxx,xxxxxxxx}
+926 {$12,$12}=>{xxxxxxxx,xxxxxxxx}
+928 {$12,$12}=>{xxxxxxxx,xxxxxxxx}
+930 {$12,$12}=>{xxxxxxxx,xxxxxxxx}
+932 {$12,$12}=>{xxxxxxxx,xxxxxxxx}
+934 {$12,$12}=>{xxxxxxxx,xxxxxxxx}
+936 {$12,$12}=>{xxxxxxxx,xxxxxxxx}
+938 {$12,$12}=>{xxxxxxxx,xxxxxxxx}
+940 {$13,$13}=>{xxxxxxxx,xxxxxxxx}
+942 {$13,$13}=>{xxxxxxxx,xxxxxxxx}
+944 {$13,$13}=>{xxxxxxxx,xxxxxxxx}
+946 {$13,$13}=>{xxxxxxxx,xxxxxxxx}
+948 {$13,$13}=>{xxxxxxxx,xxxxxxxx}
+950 {$13,$13}=>{xxxxxxxx,xxxxxxxx}
+952 {$13,$13}=>{xxxxxxxx,xxxxxxxx}
+954 {$13,$13}=>{xxxxxxxx,xxxxxxxx}
+956 {$13,$13}=>{xxxxxxxx,xxxxxxxx}
+958 {$13,$13}=>{xxxxxxxx,xxxxxxxx}
+960 {$14,$14}=>{xxxxxxxx,xxxxxxxx}
+962 {$14,$14}=>{xxxxxxxx,xxxxxxxx}
+964 {$14,$14}=>{xxxxxxxx,xxxxxxxx}
+966 {$14,$14}=>{xxxxxxxx,xxxxxxxx}
+968 {$14,$14}=>{xxxxxxxx,xxxxxxxx}
+970 {$14,$14}=>{xxxxxxxx,xxxxxxxx}
+972 {$14,$14}=>{xxxxxxxx,xxxxxxxx}
+974 {$14,$14}=>{xxxxxxxx,xxxxxxxx}
+976 {$14,$14}=>{xxxxxxxx,xxxxxxxx}
+978 {$14,$14}=>{xxxxxxxx,xxxxxxxx}
+980 {$15,$15}=>{xxxxxxxx,xxxxxxxx}
+982 {$15,$15}=>{xxxxxxxx,xxxxxxxx}
+984 {$15,$15}=>{xxxxxxxx,xxxxxxxx}
+986 {$15,$15}=>{xxxxxxxx,xxxxxxxx}
+988 {$15,$15}=>{xxxxxxxx,xxxxxxxx}
+990 {$15,$15}=>{xxxxxxxx,xxxxxxxx}
+992 {$15,$15}=>{xxxxxxxx,xxxxxxxx}
+994 {$15,$15}=>{xxxxxxxx,xxxxxxxx}
+996 {$15,$15}=>{xxxxxxxx,xxxxxxxx}
+998 {$15,$15}=>{xxxxxxxx,xxxxxxxx}
+1000 {$16,$16}=>{xxxxxxxx,xxxxxxxx}
+1002 {$16,$16}=>{xxxxxxxx,xxxxxxxx}
+1004 {$16,$16}=>{xxxxxxxx,xxxxxxxx}
+1006 {$16,$16}=>{xxxxxxxx,xxxxxxxx}
+1008 {$16,$16}=>{xxxxxxxx,xxxxxxxx}
+1010 {$16,$16}=>{xxxxxxxx,xxxxxxxx}
+1012 {$16,$16}=>{xxxxxxxx,xxxxxxxx}
+1014 {$16,$16}=>{xxxxxxxx,xxxxxxxx}
+1016 {$16,$16}=>{xxxxxxxx,xxxxxxxx}
+1018 {$16,$16}=>{xxxxxxxx,xxxxxxxx}
+1020 {$17,$17}=>{xxxxxxxx,xxxxxxxx}
+1022 {$17,$17}=>{xxxxxxxx,xxxxxxxx}
+1024 {$17,$17}=>{xxxxxxxx,xxxxxxxx}
+1026 {$17,$17}=>{xxxxxxxx,xxxxxxxx}
+1028 {$17,$17}=>{xxxxxxxx,xxxxxxxx}
+1030 {$17,$17}=>{xxxxxxxx,xxxxxxxx}
+1032 {$17,$17}=>{xxxxxxxx,xxxxxxxx}
+1034 {$17,$17}=>{xxxxxxxx,xxxxxxxx}
+1036 {$17,$17}=>{xxxxxxxx,xxxxxxxx}
+1038 {$17,$17}=>{xxxxxxxx,xxxxxxxx}
+1040 {$18,$18}=>{xxxxxxxx,xxxxxxxx}
+1042 {$18,$18}=>{xxxxxxxx,xxxxxxxx}
+1044 {$18,$18}=>{xxxxxxxx,xxxxxxxx}
+1046 {$18,$18}=>{xxxxxxxx,xxxxxxxx}
+1048 {$18,$18}=>{xxxxxxxx,xxxxxxxx}
+1050 {$18,$18}=>{xxxxxxxx,xxxxxxxx}
+1052 {$18,$18}=>{xxxxxxxx,xxxxxxxx}
+1054 {$18,$18}=>{xxxxxxxx,xxxxxxxx}
+1056 {$18,$18}=>{xxxxxxxx,xxxxxxxx}
+1058 {$18,$18}=>{xxxxxxxx,xxxxxxxx}
+1060 {$19,$19}=>{xxxxxxxx,xxxxxxxx}
+1062 {$19,$19}=>{xxxxxxxx,xxxxxxxx}
+1064 {$19,$19}=>{xxxxxxxx,xxxxxxxx}
+1066 {$19,$19}=>{xxxxxxxx,xxxxxxxx}
+1068 {$19,$19}=>{xxxxxxxx,xxxxxxxx}
+1070 {$19,$19}=>{xxxxxxxx,xxxxxxxx}
+1072 {$19,$19}=>{xxxxxxxx,xxxxxxxx}
+1074 {$19,$19}=>{xxxxxxxx,xxxxxxxx}
+1076 {$19,$19}=>{xxxxxxxx,xxxxxxxx}
+1078 {$19,$19}=>{xxxxxxxx,xxxxxxxx}
+1080 {$20,$20}=>{xxxxxxxx,xxxxxxxx}
+1082 {$20,$20}=>{xxxxxxxx,xxxxxxxx}
+1084 {$20,$20}=>{xxxxxxxx,xxxxxxxx}
+1086 {$20,$20}=>{xxxxxxxx,xxxxxxxx}
+1088 {$20,$20}=>{xxxxxxxx,xxxxxxxx}
+1090 {$20,$20}=>{xxxxxxxx,xxxxxxxx}
+1092 {$20,$20}=>{xxxxxxxx,xxxxxxxx}
+1094 {$20,$20}=>{xxxxxxxx,xxxxxxxx}
+1096 {$20,$20}=>{xxxxxxxx,xxxxxxxx}
+1098 {$20,$20}=>{xxxxxxxx,xxxxxxxx}
+1100 {$21,$21}=>{xxxxxxxx,xxxxxxxx}
+1102 {$21,$21}=>{xxxxxxxx,xxxxxxxx}
+1104 {$21,$21}=>{xxxxxxxx,xxxxxxxx}
+1106 {$21,$21}=>{xxxxxxxx,xxxxxxxx}
+1108 {$21,$21}=>{xxxxxxxx,xxxxxxxx}
+1110 {$21,$21}=>{xxxxxxxx,xxxxxxxx}
+1112 {$21,$21}=>{xxxxxxxx,xxxxxxxx}
+1114 {$21,$21}=>{xxxxxxxx,xxxxxxxx}
+1116 {$21,$21}=>{xxxxxxxx,xxxxxxxx}
+1118 {$21,$21}=>{xxxxxxxx,xxxxxxxx}
+1120 {$22,$22}=>{xxxxxxxx,xxxxxxxx}
+1122 {$22,$22}=>{xxxxxxxx,xxxxxxxx}
+1124 {$22,$22}=>{xxxxxxxx,xxxxxxxx}
+1126 {$22,$22}=>{xxxxxxxx,xxxxxxxx}
+1128 {$22,$22}=>{xxxxxxxx,xxxxxxxx}
+1130 {$22,$22}=>{xxxxxxxx,xxxxxxxx}
+1132 {$22,$22}=>{xxxxxxxx,xxxxxxxx}
+1134 {$22,$22}=>{xxxxxxxx,xxxxxxxx}
+1136 {$22,$22}=>{xxxxxxxx,xxxxxxxx}
+1138 {$22,$22}=>{xxxxxxxx,xxxxxxxx}
+1140 {$23,$23}=>{xxxxxxxx,xxxxxxxx}
+1142 {$23,$23}=>{xxxxxxxx,xxxxxxxx}
+1144 {$23,$23}=>{xxxxxxxx,xxxxxxxx}
+1146 {$23,$23}=>{xxxxxxxx,xxxxxxxx}
+1148 {$23,$23}=>{xxxxxxxx,xxxxxxxx}
+1150 {$23,$23}=>{xxxxxxxx,xxxxxxxx}
+1152 {$23,$23}=>{xxxxxxxx,xxxxxxxx}
+1154 {$23,$23}=>{xxxxxxxx,xxxxxxxx}
+1156 {$23,$23}=>{xxxxxxxx,xxxxxxxx}
+1158 {$23,$23}=>{xxxxxxxx,xxxxxxxx}
+1160 {$24,$24}=>{xxxxxxxx,xxxxxxxx}
+1162 {$24,$24}=>{xxxxxxxx,xxxxxxxx}
+1164 {$24,$24}=>{xxxxxxxx,xxxxxxxx}
+1166 {$24,$24}=>{xxxxxxxx,xxxxxxxx}
+1168 {$24,$24}=>{xxxxxxxx,xxxxxxxx}
+1170 {$24,$24}=>{xxxxxxxx,xxxxxxxx}
+1172 {$24,$24}=>{xxxxxxxx,xxxxxxxx}
+1174 {$24,$24}=>{xxxxxxxx,xxxxxxxx}
+1176 {$24,$24}=>{xxxxxxxx,xxxxxxxx}
+1178 {$24,$24}=>{xxxxxxxx,xxxxxxxx}
+1180 {$25,$25}=>{xxxxxxxx,xxxxxxxx}
+1182 {$25,$25}=>{xxxxxxxx,xxxxxxxx}
+1184 {$25,$25}=>{xxxxxxxx,xxxxxxxx}
+1186 {$25,$25}=>{xxxxxxxx,xxxxxxxx}
+1188 {$25,$25}=>{xxxxxxxx,xxxxxxxx}
+1190 {$25,$25}=>{xxxxxxxx,xxxxxxxx}
+1192 {$25,$25}=>{xxxxxxxx,xxxxxxxx}
+1194 {$25,$25}=>{xxxxxxxx,xxxxxxxx}
+1196 {$25,$25}=>{xxxxxxxx,xxxxxxxx}
+1198 {$25,$25}=>{xxxxxxxx,xxxxxxxx}
+1200 {$26,$26}=>{xxxxxxxx,xxxxxxxx}
+1202 {$26,$26}=>{xxxxxxxx,xxxxxxxx}
+1204 {$26,$26}=>{xxxxxxxx,xxxxxxxx}
+1206 {$26,$26}=>{xxxxxxxx,xxxxxxxx}
+1208 {$26,$26}=>{xxxxxxxx,xxxxxxxx}
+1210 {$26,$26}=>{xxxxxxxx,xxxxxxxx}
+1212 {$26,$26}=>{xxxxxxxx,xxxxxxxx}
+1214 {$26,$26}=>{xxxxxxxx,xxxxxxxx}
+1216 {$26,$26}=>{xxxxxxxx,xxxxxxxx}
+1218 {$26,$26}=>{xxxxxxxx,xxxxxxxx}
+1220 {$27,$27}=>{xxxxxxxx,xxxxxxxx}
+1222 {$27,$27}=>{xxxxxxxx,xxxxxxxx}
+1224 {$27,$27}=>{xxxxxxxx,xxxxxxxx}
+1226 {$27,$27}=>{xxxxxxxx,xxxxxxxx}
+1228 {$27,$27}=>{xxxxxxxx,xxxxxxxx}
+1230 {$27,$27}=>{xxxxxxxx,xxxxxxxx}
+1232 {$27,$27}=>{xxxxxxxx,xxxxxxxx}
+1234 {$27,$27}=>{xxxxxxxx,xxxxxxxx}
+1236 {$27,$27}=>{xxxxxxxx,xxxxxxxx}
+1238 {$27,$27}=>{xxxxxxxx,xxxxxxxx}
+1240 {$28,$28}=>{xxxxxxxx,xxxxxxxx}
+1242 {$28,$28}=>{xxxxxxxx,xxxxxxxx}
+1244 {$28,$28}=>{xxxxxxxx,xxxxxxxx}
+1246 {$28,$28}=>{xxxxxxxx,xxxxxxxx}
+1248 {$28,$28}=>{xxxxxxxx,xxxxxxxx}
+1250 {$28,$28}=>{xxxxxxxx,xxxxxxxx}
+1252 {$28,$28}=>{xxxxxxxx,xxxxxxxx}
+1254 {$28,$28}=>{xxxxxxxx,xxxxxxxx}
+1256 {$28,$28}=>{xxxxxxxx,xxxxxxxx}
+1258 {$28,$28}=>{xxxxxxxx,xxxxxxxx}
+1260 {$29,$29}=>{xxxxxxxx,xxxxxxxx}
+1262 {$29,$29}=>{xxxxxxxx,xxxxxxxx}
+1264 {$29,$29}=>{xxxxxxxx,xxxxxxxx}
+1266 {$29,$29}=>{xxxxxxxx,xxxxxxxx}
+1268 {$29,$29}=>{xxxxxxxx,xxxxxxxx}
+1270 {$29,$29}=>{xxxxxxxx,xxxxxxxx}
+1272 {$29,$29}=>{xxxxxxxx,xxxxxxxx}
+1274 {$29,$29}=>{xxxxxxxx,xxxxxxxx}
+1276 {$29,$29}=>{xxxxxxxx,xxxxxxxx}
+1278 {$29,$29}=>{xxxxxxxx,xxxxxxxx}
+1280 {$30,$30}=>{xxxxxxxx,xxxxxxxx}
+1282 {$30,$30}=>{xxxxxxxx,xxxxxxxx}
+1284 {$30,$30}=>{xxxxxxxx,xxxxxxxx}
+1286 {$30,$30}=>{xxxxxxxx,xxxxxxxx}
+1288 {$30,$30}=>{xxxxxxxx,xxxxxxxx}
+1290 {$30,$30}=>{xxxxxxxx,xxxxxxxx}
+1292 {$30,$30}=>{xxxxxxxx,xxxxxxxx}
+1294 {$30,$30}=>{xxxxxxxx,xxxxxxxx}
+1296 {$30,$30}=>{xxxxxxxx,xxxxxxxx}
+1298 {$30,$30}=>{xxxxxxxx,xxxxxxxx}
+$finish called at time : 1300 ns : File "C:/Users/pen/Desktop/FPGA/GRF/GRF.srcs/sim_1/new/GRF_tb.v" Line 59
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'GRF_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 855.695 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Jun  3 09:29:51 2023...

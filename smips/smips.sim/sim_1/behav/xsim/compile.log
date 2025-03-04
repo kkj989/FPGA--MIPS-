@@ -1,0 +1,20 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado2020_2/FPGA/ALU/ALU.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado2020_2/FPGA/CTRL/CTRL.srcs/sources_1/new/CTRL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CTRL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado2020_2/FPGA/DataMem/DataMem.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado2020_2/FPGA/DataPath/DataPath.srcs/sources_1/new/DataPath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataPath
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado2020_2/FPGA/GRF/GRF.srcs/sources_1/new/GRF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GRF
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado2020_2/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado2020_2/FPGA/select21/select21.srcs/sources_1/new/select21.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module select21
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado2020_2/FPGA/select31/select31.srcs/sources_1/new/select31.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module select31
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado2020_2/FPGA/smips/smips.srcs/sources_1/new/smips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module smips
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado2020_2/FPGA/smips/smips.srcs/sim_1/new/smips_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module smips_tb

@@ -1,0 +1,616 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon May 29 15:09:36 2023
+# Process ID: 19420
+# Current directory: C:/Users/pen/Desktop/FPGA/DataPath/DataPath.runs/synth_1
+# Command line: vivado.exe -log DataPath.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DataPath.tcl
+# Log file: C:/Users/pen/Desktop/FPGA/DataPath/DataPath.runs/synth_1/DataPath.vds
+# Journal file: C:/Users/pen/Desktop/FPGA/DataPath/DataPath.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source DataPath.tcl -notrace
+Command: synth_design -top DataPath -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16548 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 507.199 ; gain = 208.762
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'DataPath' [C:/Users/pen/Desktop/FPGA/DataPath/DataPath.srcs/sources_1/new/DataPath.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IFU' [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:23]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "block" *) [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:32]
+INFO: [Synth 8-3876] $readmem data file 'C:/Users/pen/Desktop/FPGA/IFU/IFU.sim/sim_1/behav/xsim/code.dat' is read successfully [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'IFU' (1#1) [C:/Users/pen/Desktop/FPGA/IFU/IFU.srcs/sources_1/new/IFU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DataMem' [C:/Users/pen/Desktop/FPGA/DataMem/DataMem.srcs/sources_1/new/DataMem.v:22]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [C:/Users/pen/Desktop/FPGA/DataMem/DataMem.srcs/sources_1/new/DataMem.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'DataMem' (2#1) [C:/Users/pen/Desktop/FPGA/DataMem/DataMem.srcs/sources_1/new/DataMem.v:22]
+INFO: [Synth 8-6157] synthesizing module 'GRF' [C:/Users/pen/Desktop/FPGA/GRF/GRF.srcs/sources_1/new/GRF.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'GRF' (3#1) [C:/Users/pen/Desktop/FPGA/GRF/GRF.srcs/sources_1/new/GRF.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/pen/Desktop/FPGA/ALU/ALU.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-251] Overflow occurred during addition [C:/Users/pen/Desktop/FPGA/ALU/ALU.srcs/sources_1/new/ALU.v:48]
+INFO: [Synth 8-251] Overflow occurred during addition [C:/Users/pen/Desktop/FPGA/ALU/ALU.srcs/sources_1/new/ALU.v:61]
+INFO: [Synth 8-251] Overflow occurred during addition [C:/Users/pen/Desktop/FPGA/ALU/ALU.srcs/sources_1/new/ALU.v:97]
+INFO: [Synth 8-251] Overflow occurred during addition [C:/Users/pen/Desktop/FPGA/ALU/ALU.srcs/sources_1/new/ALU.v:110]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (4#1) [C:/Users/pen/Desktop/FPGA/ALU/ALU.srcs/sources_1/new/ALU.v:23]
+WARNING: [Synth 8-3848] Net opIn in module/entity DataPath does not have driver. [C:/Users/pen/Desktop/FPGA/DataPath/DataPath.srcs/sources_1/new/DataPath.v:32]
+WARNING: [Synth 8-3848] Net funcIn in module/entity DataPath does not have driver. [C:/Users/pen/Desktop/FPGA/DataPath/DataPath.srcs/sources_1/new/DataPath.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'DataPath' (5#1) [C:/Users/pen/Desktop/FPGA/DataPath/DataPath.srcs/sources_1/new/DataPath.v:23]
+WARNING: [Synth 8-3331] design DataMem has unconnected port addr[1]
+WARNING: [Synth 8-3331] design DataMem has unconnected port addr[0]
+WARNING: [Synth 8-3331] design DataPath has unconnected port opIn[5]
+WARNING: [Synth 8-3331] design DataPath has unconnected port opIn[4]
+WARNING: [Synth 8-3331] design DataPath has unconnected port opIn[3]
+WARNING: [Synth 8-3331] design DataPath has unconnected port opIn[2]
+WARNING: [Synth 8-3331] design DataPath has unconnected port opIn[1]
+WARNING: [Synth 8-3331] design DataPath has unconnected port opIn[0]
+WARNING: [Synth 8-3331] design DataPath has unconnected port funcIn[5]
+WARNING: [Synth 8-3331] design DataPath has unconnected port funcIn[4]
+WARNING: [Synth 8-3331] design DataPath has unconnected port funcIn[3]
+WARNING: [Synth 8-3331] design DataPath has unconnected port funcIn[2]
+WARNING: [Synth 8-3331] design DataPath has unconnected port funcIn[1]
+WARNING: [Synth 8-3331] design DataPath has unconnected port funcIn[0]
+WARNING: [Synth 8-3331] design DataPath has unconnected port branch
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 718.238 ; gain = 419.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 718.238 ; gain = 419.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 718.238 ; gain = 419.801
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+INFO: [Synth 8-7031] Trying to map ROM "imem" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-7031] Trying to map ROM "imem" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/pen/Desktop/FPGA/ALU/ALU.srcs/sources_1/new/ALU.v:114]
+WARNING: [Synth 8-327] inferring latch for variable 'dataOut_reg' [C:/Users/pen/Desktop/FPGA/ALU/ALU.srcs/sources_1/new/ALU.v:37]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:42 ; elapsed = 00:00:41 . Memory (MB): peak = 996.422 ; gain = 697.984
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------------+------------+----------+
+|      |RTL Partition         |Replication |Instances |
++------+----------------------+------------+----------+
+|1     |muxpart__2048_DataMem |           1|     32736|
+|2     |DataMem__GB1          |           1|      3015|
+|3     |DataMem__GB2          |           1|      9952|
+|4     |DataMem__GB3          |           1|     11178|
+|5     |DataMem__GB4          |           1|     15648|
+|6     |DataMem__GB5          |           1|     18094|
+|7     |DataMem__GB6          |           1|     22844|
+|8     |DataMem__GB7          |           1|     29254|
+|9     |DataMem__GB8          |           1|     36066|
+|10    |DataMem__GB9          |           1|     31312|
+|11    |DataMem__GB10         |           1|     15119|
+|12    |DataMem__GB11         |           1|     32002|
+|13    |DataMem__GB12         |           1|     10771|
+|14    |DataMem__GB13         |           1|     16195|
+|15    |DataMem__GB14         |           1|     36036|
+|16    |DataMem__GB15         |           1|     34888|
+|17    |DataPath__GC0         |           1|     14483|
++------+----------------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     34 Bit       Adders := 1     
+	   3 Input     34 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1060  
++---ROMs : 
+	                              ROMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1139  
+	   5 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	  13 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2052  
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module DataPath 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module DataMem 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1024  
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1032  
+	   2 Input      1 Bit        Muxes := 2048  
+Module IFU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
++---ROMs : 
+	                              ROMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   5 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+Module GRF 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 34    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 99    
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     34 Bit       Adders := 1     
+	   3 Input     34 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	  13 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design DataPath has unconnected port opIn[5]
+WARNING: [Synth 8-3331] design DataPath has unconnected port opIn[4]
+WARNING: [Synth 8-3331] design DataPath has unconnected port opIn[3]
+WARNING: [Synth 8-3331] design DataPath has unconnected port opIn[2]
+WARNING: [Synth 8-3331] design DataPath has unconnected port opIn[1]
+WARNING: [Synth 8-3331] design DataPath has unconnected port opIn[0]
+WARNING: [Synth 8-3331] design DataPath has unconnected port funcIn[5]
+WARNING: [Synth 8-3331] design DataPath has unconnected port funcIn[4]
+WARNING: [Synth 8-3331] design DataPath has unconnected port funcIn[3]
+WARNING: [Synth 8-3331] design DataPath has unconnected port funcIn[2]
+WARNING: [Synth 8-3331] design DataPath has unconnected port funcIn[1]
+WARNING: [Synth 8-3331] design DataPath has unconnected port funcIn[0]
+WARNING: [Synth 8-3331] design DataPath has unconnected port branch
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[747][0]' (FDE) to 'u2i_1/dmem_reg[747][1]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[747][1]' (FDE) to 'u2i_1/dmem_reg[747][2]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[747][2]' (FDE) to 'u2i_1/dmem_reg[747][3]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[747][3]' (FDE) to 'u2i_1/dmem_reg[747][4]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[747][4]' (FDE) to 'u2i_1/dmem_reg[747][5]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[747][5]' (FDE) to 'u2i_1/dmem_reg[747][6]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[747][6]' (FDE) to 'u2i_1/dmem_reg[747][7]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[747][7]' (FDE) to 'u2i_1/dmem_reg[747][8]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[747][8]' (FDE) to 'u2i_1/dmem_reg[747][9]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[747][9]' (FDE) to 'u2i_1/dmem_reg[747][10]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[747][10]' (FDE) to 'u2i_1/dmem_reg[747][11]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[747][11]' (FDE) to 'u2i_1/dmem_reg[747][12]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[747][12]' (FDE) to 'u2i_1/dmem_reg[747][13]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[747][13]' (FDE) to 'u2i_1/dmem_reg[747][14]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[747][14]' (FDE) to 'u2i_1/dmem_reg[747][15]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[747][15]' (FDE) to 'u2i_1/dmem_reg[747][16]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[747][16]' (FDE) to 'u2i_1/dmem_reg[747][17]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[747][17]' (FDE) to 'u2i_1/dmem_reg[747][18]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[747][18]' (FDE) to 'u2i_1/dmem_reg[747][19]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[747][19]' (FDE) to 'u2i_1/dmem_reg[747][20]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[747][20]' (FDE) to 'u2i_1/dmem_reg[747][21]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[747][21]' (FDE) to 'u2i_1/dmem_reg[747][22]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[747][22]' (FDE) to 'u2i_1/dmem_reg[747][23]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[747][23]' (FDE) to 'u2i_1/dmem_reg[747][24]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[747][24]' (FDE) to 'u2i_1/dmem_reg[747][25]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[747][25]' (FDE) to 'u2i_1/dmem_reg[747][26]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[747][26]' (FDE) to 'u2i_1/dmem_reg[747][27]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[747][27]' (FDE) to 'u2i_1/dmem_reg[747][28]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[747][28]' (FDE) to 'u2i_1/dmem_reg[747][29]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[747][29]' (FDE) to 'u2i_1/dmem_reg[747][30]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[747][30]' (FDE) to 'u2i_1/dmem_reg[747][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[747][31]' (FDE) to 'u2i_1/dmem_reg[749][0]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[350][0]' (FDE) to 'u2i_1/dmem_reg[350][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[350][1]' (FDE) to 'u2i_1/dmem_reg[350][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[350][2]' (FDE) to 'u2i_1/dmem_reg[350][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[350][3]' (FDE) to 'u2i_1/dmem_reg[350][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[350][4]' (FDE) to 'u2i_1/dmem_reg[350][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[350][5]' (FDE) to 'u2i_1/dmem_reg[350][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[350][6]' (FDE) to 'u2i_1/dmem_reg[350][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[350][7]' (FDE) to 'u2i_1/dmem_reg[350][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[350][8]' (FDE) to 'u2i_1/dmem_reg[350][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[350][9]' (FDE) to 'u2i_1/dmem_reg[350][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[350][10]' (FDE) to 'u2i_1/dmem_reg[350][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[350][11]' (FDE) to 'u2i_1/dmem_reg[350][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[350][12]' (FDE) to 'u2i_1/dmem_reg[350][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[350][13]' (FDE) to 'u2i_1/dmem_reg[350][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[350][14]' (FDE) to 'u2i_1/dmem_reg[350][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[350][15]' (FDE) to 'u2i_1/dmem_reg[350][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[350][16]' (FDE) to 'u2i_1/dmem_reg[350][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[350][17]' (FDE) to 'u2i_1/dmem_reg[350][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[350][18]' (FDE) to 'u2i_1/dmem_reg[350][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[350][19]' (FDE) to 'u2i_1/dmem_reg[350][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[350][20]' (FDE) to 'u2i_1/dmem_reg[350][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[350][21]' (FDE) to 'u2i_1/dmem_reg[350][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[350][22]' (FDE) to 'u2i_1/dmem_reg[350][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[350][23]' (FDE) to 'u2i_1/dmem_reg[350][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[350][24]' (FDE) to 'u2i_1/dmem_reg[350][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[350][25]' (FDE) to 'u2i_1/dmem_reg[350][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[350][26]' (FDE) to 'u2i_1/dmem_reg[350][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[350][27]' (FDE) to 'u2i_1/dmem_reg[350][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[350][28]' (FDE) to 'u2i_1/dmem_reg[350][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[350][29]' (FDE) to 'u2i_1/dmem_reg[350][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[350][30]' (FDE) to 'u2i_1/dmem_reg[350][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[350][31] )
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[962][0]' (FDE) to 'u2i_1/dmem_reg[962][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[962][1]' (FDE) to 'u2i_1/dmem_reg[962][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[962][2]' (FDE) to 'u2i_1/dmem_reg[962][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[962][3]' (FDE) to 'u2i_1/dmem_reg[962][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[962][4]' (FDE) to 'u2i_1/dmem_reg[962][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[962][5]' (FDE) to 'u2i_1/dmem_reg[962][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[962][6]' (FDE) to 'u2i_1/dmem_reg[962][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[962][7]' (FDE) to 'u2i_1/dmem_reg[962][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[962][8]' (FDE) to 'u2i_1/dmem_reg[962][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[962][9]' (FDE) to 'u2i_1/dmem_reg[962][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[962][10]' (FDE) to 'u2i_1/dmem_reg[962][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[962][11]' (FDE) to 'u2i_1/dmem_reg[962][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[962][12]' (FDE) to 'u2i_1/dmem_reg[962][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[962][13]' (FDE) to 'u2i_1/dmem_reg[962][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[962][14]' (FDE) to 'u2i_1/dmem_reg[962][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[962][15]' (FDE) to 'u2i_1/dmem_reg[962][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[962][16]' (FDE) to 'u2i_1/dmem_reg[962][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[962][17]' (FDE) to 'u2i_1/dmem_reg[962][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[962][18]' (FDE) to 'u2i_1/dmem_reg[962][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[962][19]' (FDE) to 'u2i_1/dmem_reg[962][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[962][20]' (FDE) to 'u2i_1/dmem_reg[962][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[962][21]' (FDE) to 'u2i_1/dmem_reg[962][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[962][22]' (FDE) to 'u2i_1/dmem_reg[962][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[962][23]' (FDE) to 'u2i_1/dmem_reg[962][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[962][24]' (FDE) to 'u2i_1/dmem_reg[962][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[962][25]' (FDE) to 'u2i_1/dmem_reg[962][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[962][26]' (FDE) to 'u2i_1/dmem_reg[962][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[962][27]' (FDE) to 'u2i_1/dmem_reg[962][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[962][28]' (FDE) to 'u2i_1/dmem_reg[962][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[962][29]' (FDE) to 'u2i_1/dmem_reg[962][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[962][30]' (FDE) to 'u2i_1/dmem_reg[962][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[962][31] )
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[98][0]' (FDE) to 'u2i_1/dmem_reg[98][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[98][1]' (FDE) to 'u2i_1/dmem_reg[98][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[98][2]' (FDE) to 'u2i_1/dmem_reg[98][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[98][3]' (FDE) to 'u2i_1/dmem_reg[98][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[98][4]' (FDE) to 'u2i_1/dmem_reg[98][31]'
+INFO: [Synth 8-3886] merging instance 'u2i_1/dmem_reg[98][5]' (FDE) to 'u2i_1/dmem_reg[98][31]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[98][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[17][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[961][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[599][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[598][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[18][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[193][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[541][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[597][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[19][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[959][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[542][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[958][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[750][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[281][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[543][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[957][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[221][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[355][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[751][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[373][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[95][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[339][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[753][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[754][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[955][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[755][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[94][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[257][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[954][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[93][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[545][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[251][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[953][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[595][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[374][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[546][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[594][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[951][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[547][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[758][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[950][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[759][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[593][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[21][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[949][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[591][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[590][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[22][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[761][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[589][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[549][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[23][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[947][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[194][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[550][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[946][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[165][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[449][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[945][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[551][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[375][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[303][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[763][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[617][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[587][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[258][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[943][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[553][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[347][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[586][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[942][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[554][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[163][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[941][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[447][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[555][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[310][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[585][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[583][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[582][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[581][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[579][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[767][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[313][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[482][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[125][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[123][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[481][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[483][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[669][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[670][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[671][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[122][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[615][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[201][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[485][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmem_reg[614][31] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:38 ; elapsed = 00:01:54 . Memory (MB): peak = 1004.148 ; gain = 705.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|IFU         | p_0_out    | 1024x16       | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------------+------------+----------+
+|      |RTL Partition         |Replication |Instances |
++------+----------------------+------------+----------+
+|1     |muxpart__2048_DataMem |           1|      8160|
+|2     |DataMem__GB1          |           1|        64|
+|3     |DataMem__GB2          |           1|       160|
+|4     |DataMem__GB3          |           1|         0|
+|5     |DataMem__GB4          |           1|       901|
+|6     |DataMem__GB5          |           1|      1595|
+|7     |DataMem__GB6          |           1|      2283|
+|8     |DataMem__GB7          |           1|      2955|
+|9     |DataMem__GB8          |           1|      3698|
+|10    |DataMem__GB9          |           1|      3574|
+|11    |DataMem__GB10         |           1|      1559|
+|12    |DataMem__GB11         |           1|      3794|
+|13    |DataMem__GB12         |           1|      1178|
+|14    |DataMem__GB13         |           1|       980|
+|15    |DataMem__GB14         |           1|      3717|
+|16    |DataMem__GB15         |           1|      3505|
+|17    |DataPath__GC0         |           1|       816|
++------+----------------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:43 ; elapsed = 00:02:00 . Memory (MB): peak = 1004.148 ; gain = 705.711
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------------+------------+----------+
+|      |RTL Partition         |Replication |Instances |
++------+----------------------+------------+----------+
+|1     |muxpart__2048_DataMem |           1|      1413|
+|2     |DataMem__GB6          |           1|        13|
+|3     |DataMem__GB7          |           1|       135|
+|4     |DataMem__GB9          |           1|       563|
+|5     |DataMem__GB10         |           1|         2|
+|6     |DataMem__GB11         |           1|       388|
+|7     |DataMem__GB12         |           1|        64|
+|8     |DataMem__GB13         |           1|       210|
+|9     |DataMem__GB14         |           1|       169|
+|10    |DataMem__GB15         |           1|       325|
+|11    |DataPath__GC0         |           1|       813|
++------+----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3332] Sequential element (u4/dataOut_reg[1]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (u4/dataOut_reg[31]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (u4/dataOut_reg[0]) is unused and will be removed from module DataPath.
+INFO: [Synth 8-7053] The timing for the instance u1/cPC_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:43 ; elapsed = 00:02:00 . Memory (MB): peak = 1004.148 ; gain = 705.711
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:46 ; elapsed = 00:02:03 . Memory (MB): peak = 1004.148 ; gain = 705.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:46 ; elapsed = 00:02:03 . Memory (MB): peak = 1004.148 ; gain = 705.711
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:46 ; elapsed = 00:02:03 . Memory (MB): peak = 1004.148 ; gain = 705.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:46 ; elapsed = 00:02:03 . Memory (MB): peak = 1004.148 ; gain = 705.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:46 ; elapsed = 00:02:03 . Memory (MB): peak = 1004.148 ; gain = 705.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:46 ; elapsed = 00:02:03 . Memory (MB): peak = 1004.148 ; gain = 705.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |     6|
+|3     |LUT1     |     1|
+|4     |LUT2     |    11|
+|5     |LUT3     |     2|
+|6     |LUT4     |     2|
+|7     |LUT5     |    10|
+|8     |LUT6     |    38|
+|9     |MUXF7    |     2|
+|10    |RAMB18E1 |     1|
+|11    |FDRE     |    14|
+|12    |IBUF     |    13|
+|13    |OBUF     |     1|
+|14    |OBUFT    |    12|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   114|
+|2     |  u1     |IFU    |    83|
+|3     |  u3     |GRF    |     4|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:46 ; elapsed = 00:02:03 . Memory (MB): peak = 1004.148 ; gain = 705.711
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 34 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:46 ; elapsed = 00:02:03 . Memory (MB): peak = 1004.148 ; gain = 705.711
+Synthesis Optimization Complete : Time (s): cpu = 00:01:46 ; elapsed = 00:02:03 . Memory (MB): peak = 1004.148 ; gain = 705.711
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1004.148 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1004.148 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+236 Infos, 34 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:50 ; elapsed = 00:02:08 . Memory (MB): peak = 1004.148 ; gain = 705.711
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1004.148 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/pen/Desktop/FPGA/DataPath/DataPath.runs/synth_1/DataPath.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file DataPath_utilization_synth.rpt -pb DataPath_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon May 29 15:11:47 2023...

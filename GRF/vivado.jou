@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Aug 11 15:24:54 2023
+# Process ID: 20080
+# Current directory: D:/Vivado2020_2/FPGA/GRF
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19876 D:\Vivado2020_2\FPGA\GRF\GRF.xpr
+# Log file: D:/Vivado2020_2/FPGA/GRF/vivado.log
+# Journal file: D:/Vivado2020_2/FPGA/GRF\vivado.jou
+#-----------------------------------------------------------sstart_gui
+open_project -read_only D:/Vivado2020_2/FPGA/GRF/GRF.xpr
+update_compile_order -fileset sources_1

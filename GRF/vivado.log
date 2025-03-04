@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Aug 11 15:24:54 2023
+# Process ID: 20080
+# Current directory: D:/Vivado2020_2/FPGA/GRF
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19876 D:\Vivado2020_2\FPGA\GRF\GRF.xpr
+# Log file: D:/Vivado2020_2/FPGA/GRF/vivado.log
+# Journal file: D:/Vivado2020_2/FPGA/GRF\vivado.jou
+#-----------------------------------------------------------sstart_guiexit
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 11 15:28:43 2023...
+1-313] Project file moved from 'C:/Users/pen/Desktop/FPGA/GRF' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-229] Project 'GRF.xpr' is read-only and therefore could not be upgraded for this version of Vivado.  Use 'File | Save Project As...' if you wish to save an upgraded copy.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado2020_2/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 11 15:28:39 2023...
